@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { getToolsByCategory } from "@/lib/tools";
+import { toolsByCategory } from "@/lib/tools";
 
-const categories = getToolsByCategory();
+const categories = toolsByCategory;
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);

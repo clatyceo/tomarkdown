@@ -25,13 +25,10 @@ export async function POST(request: NextRequest) {
       });
     }
 
-    const data = await backendRes.json();
-
-    if (!backendRes.ok) {
-      return NextResponse.json(data, { status: backendRes.status });
-    }
-
-    return NextResponse.json(data);
+    return new NextResponse(backendRes.body, {
+      status: backendRes.status,
+      headers: { "Content-Type": "application/json" },
+    });
   } catch {
     return NextResponse.json(
       { detail: "Backend service unavailable" },

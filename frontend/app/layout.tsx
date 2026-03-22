@@ -7,12 +7,14 @@ import "./globals.css";
 const sora = Sora({
   subsets: ["latin"],
   variable: "--font-sora",
+  display: "swap",
 });
 
 const instrumentSerif = Instrument_Serif({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-instrument",
+  display: "swap",
 });
 
 export const metadata: Metadata = {

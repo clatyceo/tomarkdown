@@ -27,16 +27,6 @@ export const categoryLabels: Record<CategoryName, string> = {
   media: "Media",
 };
 
-export function getToolsByCategory() {
-  const grouped: Record<CategoryName, ToolConfig[]> = { documents: [], data: [], media: [] };
-  for (const tool of Object.values(tools)) {
-    grouped[tool.category].push(tool);
-  }
-  return (["documents", "data", "media"] as const).map((cat) => ({
-    name: categoryLabels[cat],
-    tools: grouped[cat],
-  }));
-}
 
 export const tools: Record<string, ToolConfig> = {
   pdf: {
@@ -531,3 +521,17 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
 };
+
+// Computed once at module load, reused everywhere
+function _buildToolsByCategory() {
+  const grouped: Record<CategoryName, ToolConfig[]> = { documents: [], data: [], media: [] };
+  for (const tool of Object.values(tools)) {
+    grouped[tool.category].push(tool);
+  }
+  return (["documents", "data", "media"] as const).map((cat) => ({
+    name: categoryLabels[cat],
+    tools: grouped[cat],
+  }));
+}
+
+export const toolsByCategory = _buildToolsByCategory();

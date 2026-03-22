@@ -2,6 +2,7 @@ from fastapi import FastAPI, UploadFile, File, Form, HTTPException, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from converter import convert_file, convert_url
+import asyncio
 import time
 
 app = FastAPI(title="AllToMD API")
@@ -61,8 +62,13 @@ async def convert_file_endpoint(
             raise HTTPException(status_code=413, detail="File too large (max 10MB)")
         content = await file.read()
         try:
-            result = convert_file(content, file.filename or "unknown", type)
+            result = await asyncio.wait_for(
+                asyncio.to_thread(convert_file, content, file.filename or "unknown", type),
+                timeout=30,
+            )
             return result
+        except asyncio.TimeoutError:
+            raise HTTPException(status_code=422, detail="Conversion timed out (30s limit)")
         except ValueError as e:
             status = 413 if "too large" in str(e).lower() else 400
             raise HTTPException(status_code=status, detail=str(e))
@@ -77,8 +83,13 @@ async def convert_url_endpoint(request: Request, body: UrlRequest):
     check_rate_limit(request.client.host if request.client else "unknown")
 
     try:
-        result = convert_url(body.url, body.type)
+        result = await asyncio.wait_for(
+            asyncio.to_thread(convert_url, body.url, body.type),
+            timeout=30,
+        )
         return result
+    except asyncio.TimeoutError:
+        raise HTTPException(status_code=422, detail="Conversion timed out (30s limit)")
     except ValueError as e:
         raise HTTPException(status_code=400, detail=str(e))
     except Exception as e:

@@ -1,7 +1,7 @@
 import ToolCard from "@/components/tool-card";
-import { getToolsByCategory } from "@/lib/tools";
+import { toolsByCategory } from "@/lib/tools";
 
-const categories = getToolsByCategory();
+const categories = toolsByCategory;
 
 const features = [
   { title: "100% Free", desc: "No sign-up, no limits, no hidden fees." },
