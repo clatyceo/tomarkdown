@@ -30,7 +30,7 @@ export default function Header() {
                       href={`/${tool.slug}`}
                       className="block px-4 py-2 text-sm text-gray-600 hover:bg-gray-50 hover:text-gray-900 transition-colors"
                     >
-                      {tool.h1.replace("Convert ", "")}
+                      {tool.displayName}
                     </Link>
                   ))}
                 </div>
@@ -66,7 +66,7 @@ export default function Header() {
                   className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
                   onClick={() => setMobileOpen(false)}
                 >
-                  {tool.h1.replace("Convert ", "")}
+                  {tool.displayName}
                 </Link>
               ))}
             </div>

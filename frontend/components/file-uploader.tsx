@@ -1,8 +1,7 @@
 "use client";
 
 import { useCallback, useState } from "react";
-
-const MAX_FILE_SIZE = 10 * 1024 * 1024; // 10MB
+import { MAX_FILE_SIZE } from "@/lib/config";
 
 interface FileUploaderProps {
   accept: string;

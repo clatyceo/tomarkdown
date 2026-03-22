@@ -8,18 +8,23 @@ import UrlInput from "./url-input";
 import MarkdownPreview from "./markdown-preview";
 import DownloadButton from "./download-button";
 
+function sanitizeFilename(title: string, fallback: string): string {
+  if (!title) return fallback;
+  return title.replace(/[^a-zA-Z0-9\s-]/g, "").replace(/\s+/g, "-").toLowerCase() || fallback;
+}
+
 export default function ConverterPage({ tool }: { tool: ToolConfig }) {
   const [markdown, setMarkdown] = useState("");
   const [title, setTitle] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState("");
 
-  const handleFile = async (file: File) => {
+  const handleConvert = async (convert: () => Promise<{ markdown: string; metadata: { title: string } }>) => {
     setIsLoading(true);
     setError("");
     setMarkdown("");
     try {
-      const result = await convertFile(file, tool.type);
+      const result = await convert();
       setMarkdown(result.markdown);
       setTitle(result.metadata.title);
     } catch (e) {
@@ -28,25 +33,6 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
       setIsLoading(false);
     }
   };
-
-  const handleUrl = async (url: string) => {
-    setIsLoading(true);
-    setError("");
-    setMarkdown("");
-    try {
-      const result = await convertUrl(url, tool.type);
-      setMarkdown(result.markdown);
-      setTitle(result.metadata.title);
-    } catch (e) {
-      setError(e instanceof Error ? e.message : "Conversion failed");
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const sanitizedFilename = title
-    ? title.replace(/[^a-zA-Z0-9\s-]/g, "").replace(/\s+/g, "-").toLowerCase()
-    : tool.type;
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
@@ -57,9 +43,18 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
 
       <div className="mt-10">
         {tool.inputMode === "file" ? (
-          <FileUploader accept={tool.accept!} onFileSelect={handleFile} isLoading={isLoading} />
+          <FileUploader
+            accept={tool.accept!}
+            onFileSelect={(file) => handleConvert(() => convertFile(file, tool.type))}
+            onError={setError}
+            isLoading={isLoading}
+          />
         ) : (
-          <UrlInput placeholder={tool.placeholder!} onSubmit={handleUrl} isLoading={isLoading} />
+          <UrlInput
+            placeholder={tool.placeholder!}
+            onSubmit={(url) => handleConvert(() => convertUrl(url, tool.type))}
+            isLoading={isLoading}
+          />
         )}
       </div>
 
@@ -70,7 +65,7 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
       {markdown && (
         <div className="mt-8 space-y-4">
           <MarkdownPreview markdown={markdown} title={title} />
-          <DownloadButton markdown={markdown} filename={sanitizedFilename} />
+          <DownloadButton markdown={markdown} filename={sanitizeFilename(title, tool.type)} />
         </div>
       )}
     </div>

@@ -29,7 +29,7 @@ export default function Home() {
             {cat.tools.map((tool) => (
               <ToolCard
                 key={tool.slug}
-                title={tool.h1.replace("Convert ", "")}
+                title={tool.displayName}
                 description={tool.subtitle}
                 href={`/${tool.slug}`}
                 icon={tool.icon}

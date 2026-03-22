@@ -1,8 +1,9 @@
 import type { MetadataRoute } from "next";
 import { tools } from "@/lib/tools";
+import { SITE_URL } from "@/lib/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = "https://tomarkdown.com";
+  const base = SITE_URL;
 
   return [
     { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
