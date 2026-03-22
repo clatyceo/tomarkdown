@@ -3,7 +3,16 @@ import tempfile
 import re
 from markitdown import MarkItDown
 
-SUPPORTED_FILE_TYPES = {"pdf", "docx"}
+SUPPORTED_FILE_TYPES = {
+    "pdf", "docx", "pptx", "xlsx", "xls",
+    "html", "htm",
+    "epub",
+    "csv", "json", "xml",
+    "msg",
+    "ipynb",
+    "zip",
+    "jpg", "jpeg", "png", "gif", "webp",
+}
 MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
 
 md_converter = MarkItDown()
