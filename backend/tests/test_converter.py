@@ -33,7 +33,8 @@ def test_convert_file_accepts_new_types():
     expected = {"pdf", "docx", "pptx", "xlsx", "xls", "html", "htm",
                 "epub", "csv", "json", "xml", "msg", "ipynb", "zip",
                 "hwp", "hwpx",
-                "jpg", "jpeg", "png", "gif", "webp"}
+                "jpg", "jpeg", "png", "gif", "webp",
+                "rtf", "txt"}
     assert expected == SUPPORTED_FILE_TYPES
 
 
@@ -80,3 +81,51 @@ def test_convert_url_m_youtube():
     """m.youtube.com should be in ALLOWED_YOUTUBE_HOSTS."""
     from converter import ALLOWED_YOUTUBE_HOSTS
     assert "m.youtube.com" in ALLOWED_YOUTUBE_HOSTS
+
+
+def test_convert_txt_basic():
+    """TXT conversion should return the plain text content as markdown."""
+    content = b"Hello, world!\nThis is a test."
+    result = convert_file(content, "test.txt", "txt")
+    assert result["markdown"] == "Hello, world!\nThis is a test."
+    assert result["metadata"]["title"] == "test"
+    assert result["metadata"]["type"] == "txt"
+    assert result["metadata"]["size"] == len(content)
+
+
+def test_convert_txt_empty():
+    """Empty TXT file should raise ConversionError."""
+    from errors import ConversionError
+    with pytest.raises(ConversionError):
+        convert_file(b"", "empty.txt", "txt")
+
+
+def test_convert_txt_whitespace_only():
+    """Whitespace-only TXT file should raise ConversionError."""
+    from errors import ConversionError
+    with pytest.raises(ConversionError):
+        convert_file(b"   \n\t  \n  ", "blank.txt", "txt")
+
+
+def test_convert_txt_unicode():
+    """TXT conversion should handle Unicode content correctly."""
+    content = "Hello, 세계! 日本語テスト".encode("utf-8")
+    result = convert_file(content, "unicode.txt", "txt")
+    assert "세계" in result["markdown"]
+    assert "日本語" in result["markdown"]
+
+
+def test_convert_rtf_basic():
+    """RTF conversion should strip RTF formatting and return plain text."""
+    rtf_content = rb"{\rtf1\ansi{\fonttbl\f0\fswiss Helvetica;}\f0\pard This is a test.}"
+    result = convert_file(rtf_content, "test.rtf", "rtf")
+    assert "This is a test." in result["markdown"]
+    assert result["metadata"]["title"] == "test"
+    assert result["metadata"]["type"] == "rtf"
+
+
+def test_convert_rtf_empty():
+    """Empty RTF file should raise ConversionError."""
+    from errors import ConversionError
+    with pytest.raises(ConversionError):
+        convert_file(b"", "empty.rtf", "rtf")

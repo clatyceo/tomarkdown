@@ -535,6 +535,56 @@
       "faq3A": "HWPX는 XML 기반의 최신 형식입니다 (DOCX와 DOC의 관계와 유사). 두 형식 모두 지원합니다.",
       "faq4Q": "파일이 저장되나요?",
       "faq4A": "아니요. 파일은 메모리에서 처리되며 즉시 삭제됩니다."
+    },
+    "txt": {
+      "title": "TXT 마크다운 변환 — tomdnow",
+      "h1": "TXT를 마크다운으로 변환",
+      "displayName": "TXT 마크다운 변환",
+      "subtitle": "일반 텍스트 파일을 마크다운 형식으로 변환하세요.",
+      "seoDescription": "무료 온라인 TXT 마크다운 변환기. 텍스트 파일을 업로드하면 마크다운을 즉시 받을 수 있습니다.",
+      "seoKeywords": "txt 마크다운 변환, 텍스트 마크다운 변환, txt to markdown",
+      "howTo1Step": "TXT 파일 업로드",
+      "howTo1Desc": "텍스트 파일을 끌어다 놓거나 클릭하여 선택하세요.",
+      "howTo2Step": "변환",
+      "howTo2Desc": "텍스트 내용이 마크다운 형식으로 변환됩니다.",
+      "howTo3Step": "다운로드",
+      "howTo3Desc": "결과를 미리 보고 .md 파일을 다운로드하세요.",
+      "why1": "일반 텍스트 노트에 마크다운 서식 추가",
+      "why2": "문서 시스템용 텍스트 파일 준비",
+      "why3": "AI 도구에 마크다운 구조로 텍스트 입력",
+      "why4": "GitHub, Notion, Obsidian에서 텍스트 콘텐츠 활용",
+      "faq1Q": "이 도구는 무료인가요?",
+      "faq1A": "네, 회원가입 없이 완전히 무료로 이용할 수 있습니다.",
+      "faq2Q": "어떤 인코딩이 지원되나요?",
+      "faq2A": "UTF-8 인코딩 텍스트 파일이 완전히 지원됩니다.",
+      "faq3Q": "파일이 저장되나요?",
+      "faq3A": "아니요. 파일은 메모리에서 처리되며 즉시 삭제됩니다."
+    },
+    "rtf": {
+      "title": "RTF 마크다운 변환 — tomdnow",
+      "h1": "RTF를 마크다운으로 변환",
+      "displayName": "RTF 마크다운 변환",
+      "subtitle": "서식 있는 텍스트(RTF) 파일을 깔끔한 마크다운으로 변환하세요.",
+      "seoDescription": "무료 온라인 RTF 마크다운 변환기. RTF 파일을 업로드하면 마크다운을 즉시 받을 수 있습니다.",
+      "seoKeywords": "rtf 마크다운 변환, 서식 있는 텍스트 변환, rtf to markdown",
+      "howTo1Step": "RTF 파일 업로드",
+      "howTo1Desc": "RTF 파일을 끌어다 놓거나 클릭하여 선택하세요.",
+      "howTo2Step": "변환",
+      "howTo2Desc": "RTF 서식을 제거하고 마크다운으로 출력합니다.",
+      "howTo3Step": "다운로드",
+      "howTo3Desc": "결과를 미리 보고 .md 파일을 다운로드하세요.",
+      "why1": "레거시 RTF 문서를 현대적인 마크다운으로 변환",
+      "why2": "RTF 콘텐츠를 GitHub, Notion, Obsidian으로 마이그레이션",
+      "why3": "RTF 문서 텍스트를 AI 도구에 입력하여 분석",
+      "why4": "서식 있는 텍스트 파일을 검색 가능한 텍스트로 보관",
+      "faq1Q": "이 도구는 무료인가요?",
+      "faq1A": "네, 회원가입 없이 완전히 무료로 이용할 수 있습니다.",
+      "faq2Q": "서식이 보존되나요?",
+      "faq2A": "텍스트 내용, 굵게, 기울임꼴이 보존됩니다. 복잡한 RTF 레이아웃은 가독성을 위해 단순화됩니다.",
+      "faq3Q": "RTF란 무엇인가요?",
+      "faq3A": "RTF(서식 있는 텍스트 형식)는 Microsoft가 개발한 문서 형식으로, 대부분의 워드프로세서에서 지원됩니다.",
+      "faq4Q": "파일이 저장되나요?",
+      "faq4A": "아니요. 파일은 메모리에서 처리되며 즉시 삭제됩니다."
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "인증",
     "authHeaderDesc": "모든 요청에 X-Api-Key 헤더에 API 키를 포함하세요.",
     "supportedFormats": "지원 형식",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }

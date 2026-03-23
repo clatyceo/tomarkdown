@@ -535,6 +535,56 @@
       "faq3A": "HWPX é o formato mais novo baseado em XML (como DOCX vs DOC). Suportamos ambos.",
       "faq4Q": "Meu arquivo é armazenado?",
       "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente."
+    },
+    "txt": {
+      "title": "TXT para Markdown — tomdnow",
+      "h1": "Converter TXT para Markdown",
+      "displayName": "TXT para Markdown",
+      "subtitle": "Converta arquivos de texto simples para Markdown formatado.",
+      "seoDescription": "Conversor online gratuito de TXT para Markdown. Envie arquivos de texto e obtenha Markdown instantaneamente.",
+      "seoKeywords": "txt para markdown, texto para markdown, converter txt para md",
+      "howTo1Step": "Envie seu TXT",
+      "howTo1Desc": "Arraste e solte ou clique para selecionar seu arquivo de texto.",
+      "howTo2Step": "Converter",
+      "howTo2Desc": "Nossa ferramenta formata o conteúdo de texto em Markdown limpo.",
+      "howTo3Step": "Baixar",
+      "howTo3Desc": "Visualize o resultado e baixe seu arquivo .md.",
+      "why1": "Adicionar formatação Markdown a notas de texto simples",
+      "why2": "Preparar arquivos de texto para sistemas de documentação",
+      "why3": "Alimentar texto simples em ferramentas de IA com estrutura Markdown",
+      "why4": "Usar conteúdo de texto no GitHub, Notion ou Obsidian",
+      "faq1Q": "Esta ferramenta é gratuita?",
+      "faq1A": "Sim, totalmente gratuita e sem necessidade de cadastro.",
+      "faq2Q": "Qual codificação é suportada?",
+      "faq2A": "Arquivos de texto codificados em UTF-8 são totalmente suportados.",
+      "faq3Q": "Meu arquivo é armazenado?",
+      "faq3A": "Não. Os arquivos são processados em memória e excluídos imediatamente."
+    },
+    "rtf": {
+      "title": "RTF para Markdown — tomdnow",
+      "h1": "Converter RTF para Markdown",
+      "displayName": "RTF para Markdown",
+      "subtitle": "Converta arquivos Rich Text para Markdown limpo.",
+      "seoDescription": "Conversor online gratuito de RTF para Markdown. Envie arquivos RTF e obtenha Markdown instantaneamente.",
+      "seoKeywords": "rtf para markdown, rich text para markdown, converter rtf para md",
+      "howTo1Step": "Envie seu RTF",
+      "howTo1Desc": "Arraste e solte ou clique para selecionar seu arquivo RTF.",
+      "howTo2Step": "Converter",
+      "howTo2Desc": "Nossa ferramenta remove a formatação RTF e gera Markdown limpo.",
+      "howTo3Step": "Baixar",
+      "howTo3Desc": "Visualize o resultado e baixe seu arquivo .md.",
+      "why1": "Converter documentos Rich Text antigos para Markdown moderno",
+      "why2": "Migrar conteúdo RTF para GitHub, Notion ou Obsidian",
+      "why3": "Alimentar texto de documentos RTF em ferramentas de IA para análise",
+      "why4": "Arquivar arquivos Rich Text como texto simples pesquisável",
+      "faq1Q": "Esta ferramenta é gratuita?",
+      "faq1A": "Sim, totalmente gratuita e sem necessidade de cadastro.",
+      "faq2Q": "A formatação é preservada?",
+      "faq2A": "Conteúdo de texto, negrito e itálico são preservados. Layouts RTF complexos são simplificados para melhor legibilidade.",
+      "faq3Q": "O que é RTF?",
+      "faq3A": "RTF (Rich Text Format) é um formato de documento desenvolvido pela Microsoft, suportado pela maioria dos processadores de texto.",
+      "faq4Q": "Meu arquivo é armazenado?",
+      "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente."
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "Autenticacao",
     "authHeaderDesc": "Inclua sua chave API no cabecalho X-Api-Key em cada requisicao.",
     "supportedFormats": "Formatos suportados",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }

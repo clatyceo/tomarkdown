@@ -535,6 +535,56 @@
       "faq3A": "HWPX est le format plus récent basé sur XML (comme DOCX vs DOC). Nous prenons en charge les deux.",
       "faq4Q": "Mon fichier est-il stocké ?",
       "faq4A": "Non. Les fichiers sont traités en mémoire et supprimés immédiatement."
+    },
+    "txt": {
+      "title": "TXT en Markdown — tomdnow",
+      "h1": "Convertir TXT en Markdown",
+      "displayName": "TXT en Markdown",
+      "subtitle": "Convertissez les fichiers texte en Markdown formaté.",
+      "seoDescription": "Convertisseur TXT en Markdown gratuit en ligne. Importez des fichiers texte et obtenez du Markdown instantanément.",
+      "seoKeywords": "convertir txt en markdown, texte en markdown, txt vers md",
+      "howTo1Step": "Importez votre TXT",
+      "howTo1Desc": "Glissez-déposez ou cliquez pour sélectionner votre fichier texte.",
+      "howTo2Step": "Convertir",
+      "howTo2Desc": "Notre outil formate le contenu texte en Markdown propre.",
+      "howTo3Step": "Télécharger",
+      "howTo3Desc": "Prévisualisez le résultat et téléchargez votre fichier .md.",
+      "why1": "Ajouter la mise en forme Markdown aux notes en texte brut",
+      "why2": "Préparer des fichiers texte pour les systèmes de documentation",
+      "why3": "Alimenter du texte brut dans des outils IA avec une structure Markdown",
+      "why4": "Utiliser le contenu texte dans GitHub, Notion ou Obsidian",
+      "faq1Q": "Cet outil est-il gratuit ?",
+      "faq1A": "Oui, entièrement gratuit et sans inscription.",
+      "faq2Q": "Quel encodage est pris en charge ?",
+      "faq2A": "Les fichiers texte encodés en UTF-8 sont entièrement pris en charge.",
+      "faq3Q": "Mon fichier est-il stocké ?",
+      "faq3A": "Non. Les fichiers sont traités en mémoire et supprimés immédiatement."
+    },
+    "rtf": {
+      "title": "RTF en Markdown — tomdnow",
+      "h1": "Convertir RTF en Markdown",
+      "displayName": "RTF en Markdown",
+      "subtitle": "Convertissez les fichiers Rich Text en Markdown propre.",
+      "seoDescription": "Convertisseur RTF en Markdown gratuit en ligne. Importez des fichiers RTF et obtenez du Markdown instantanément.",
+      "seoKeywords": "convertir rtf en markdown, rich text en markdown, rtf vers md",
+      "howTo1Step": "Importez votre RTF",
+      "howTo1Desc": "Glissez-déposez ou cliquez pour sélectionner votre fichier RTF.",
+      "howTo2Step": "Convertir",
+      "howTo2Desc": "Notre outil supprime le formatage RTF et produit du Markdown propre.",
+      "howTo3Step": "Télécharger",
+      "howTo3Desc": "Prévisualisez le résultat et téléchargez votre fichier .md.",
+      "why1": "Convertir des documents Rich Text en Markdown moderne",
+      "why2": "Migrer le contenu RTF vers GitHub, Notion ou Obsidian",
+      "why3": "Alimenter le texte des documents RTF dans des outils IA pour l'analyse",
+      "why4": "Archiver les fichiers Rich Text en texte brut consultable",
+      "faq1Q": "Cet outil est-il gratuit ?",
+      "faq1A": "Oui, entièrement gratuit et sans inscription.",
+      "faq2Q": "La mise en forme est-elle préservée ?",
+      "faq2A": "Le contenu textuel, le gras et l'italique sont préservés. Les mises en page RTF complexes sont simplifiées pour la lisibilité.",
+      "faq3Q": "Qu'est-ce que le RTF ?",
+      "faq3A": "RTF (Rich Text Format) est un format de document développé par Microsoft, pris en charge par la plupart des traitements de texte.",
+      "faq4Q": "Mon fichier est-il stocké ?",
+      "faq4A": "Non. Les fichiers sont traités en mémoire et supprimés immédiatement."
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "Authentification",
     "authHeaderDesc": "Incluez votre cle API dans l'en-tete X-Api-Key de chaque requete.",
     "supportedFormats": "Formats pris en charge",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }

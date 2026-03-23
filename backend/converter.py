@@ -18,6 +18,7 @@ SUPPORTED_FILE_TYPES = {
     "zip",
     "hwp", "hwpx",
     "jpg", "jpeg", "png", "gif", "webp",
+    "rtf", "txt",
 }
 
 md_converter = MarkItDown()
@@ -47,6 +48,34 @@ def convert_file(content: bytes, filename: str, file_type: str) -> dict:
         markdown = convert_hwp_to_markdown(content)
         return {
             "markdown": markdown,
+            "metadata": {
+                "title": os.path.splitext(filename)[0],
+                "type": file_type,
+                "size": len(content),
+            },
+        }
+
+    if file_type == "txt":
+        markdown = content.decode("utf-8", errors="replace")
+        if not markdown.strip():
+            raise ConversionError("Empty file")
+        return {
+            "markdown": markdown,
+            "metadata": {
+                "title": os.path.splitext(filename)[0],
+                "type": file_type,
+                "size": len(content),
+            },
+        }
+
+    if file_type == "rtf":
+        from striprtf.striprtf import rtf_to_text
+        rtf_content = content.decode("utf-8", errors="replace")
+        text = rtf_to_text(rtf_content)
+        if not text.strip():
+            raise ConversionError("Empty file")
+        return {
+            "markdown": text,
             "metadata": {
                 "title": os.path.splitext(filename)[0],
                 "type": file_type,

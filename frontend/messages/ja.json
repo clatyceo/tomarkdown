@@ -535,6 +535,56 @@
       "faq3A": "HWPXはXMLベースの新しい形式です（DOCXとDOCの関係と同様）。両方の形式に対応しています。",
       "faq4Q": "ファイルは保存されますか？",
       "faq4A": "いいえ。ファイルはメモリ上で処理され、すぐに削除されます。"
+    },
+    "txt": {
+      "title": "TXT マークダウン 変換 — tomdnow",
+      "h1": "TXT を マークダウン に変換",
+      "displayName": "TXT マークダウン 変換",
+      "subtitle": "プレーンテキストファイルをフォーマット済み マークダウン に変換します。",
+      "seoDescription": "無料オンライン TXT マークダウン 変換ツール。テキストファイルをアップロードして マークダウン を即時取得。",
+      "seoKeywords": "txt マークダウン 変換, テキスト マークダウン 変換, txt to markdown",
+      "howTo1Step": "TXTをアップロード",
+      "howTo1Desc": "テキストファイルをドラッグ＆ドロップまたはクリックして選択します。",
+      "howTo2Step": "変換",
+      "howTo2Desc": "テキスト内容がクリーンな マークダウン 形式に変換されます。",
+      "howTo3Step": "ダウンロード",
+      "howTo3Desc": "結果をプレビューし、.md ファイルをダウンロードします。",
+      "why1": "プレーンテキストのメモに マークダウン フォーマットを追加",
+      "why2": "ドキュメントシステム用のテキストファイルを準備",
+      "why3": "マークダウン 構造でプレーンテキストをAIツールに入力",
+      "why4": "GitHub、Notion、Obsidianでテキストコンテンツを活用",
+      "faq1Q": "このツールは無料ですか？",
+      "faq1A": "はい、登録不要で完全に無料です。",
+      "faq2Q": "どのエンコーディングに対応していますか？",
+      "faq2A": "UTF-8エンコーディングのテキストファイルに完全対応しています。",
+      "faq3Q": "ファイルは保存されますか？",
+      "faq3A": "いいえ。ファイルはメモリ上で処理され、すぐに削除されます。"
+    },
+    "rtf": {
+      "title": "RTF マークダウン 変換 — tomdnow",
+      "h1": "RTF を マークダウン に変換",
+      "displayName": "RTF マークダウン 変換",
+      "subtitle": "リッチテキスト形式ファイルをクリーンな マークダウン に変換します。",
+      "seoDescription": "無料オンライン RTF マークダウン 変換ツール。RTFファイルをアップロードして マークダウン を即時取得。",
+      "seoKeywords": "rtf マークダウン 変換, リッチテキスト 変換, rtf to markdown",
+      "howTo1Step": "RTFをアップロード",
+      "howTo1Desc": "RTFファイルをドラッグ＆ドロップまたはクリックして選択します。",
+      "howTo2Step": "変換",
+      "howTo2Desc": "RTFフォーマットを除去し、クリーンな マークダウン を出力します。",
+      "howTo3Step": "ダウンロード",
+      "howTo3Desc": "結果をプレビューし、.md ファイルをダウンロードします。",
+      "why1": "レガシーRTF文書を最新の マークダウン に変換",
+      "why2": "RTFコンテンツをGitHub、Notion、Obsidianに移行",
+      "why3": "RTF文書テキストをAIツールに入力して分析",
+      "why4": "リッチテキストファイルを検索可能なテキストとして保管",
+      "faq1Q": "このツールは無料ですか？",
+      "faq1A": "はい、登録不要で完全に無料です。",
+      "faq2Q": "フォーマットは保持されますか？",
+      "faq2A": "テキスト内容、太字、斜体が保持されます。複雑なRTFレイアウトは読みやすさのために簡略化されます。",
+      "faq3Q": "RTFとは何ですか？",
+      "faq3A": "RTF（リッチテキスト形式）はMicrosoftが開発した文書形式で、ほとんどのワープロソフトで対応しています。",
+      "faq4Q": "ファイルは保存されますか？",
+      "faq4A": "いいえ。ファイルはメモリ上で処理され、すぐに削除されます。"
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "認証",
     "authHeaderDesc": "すべてのリクエストにX-Api-Keyヘッダーを含めてください。",
     "supportedFormats": "対応フォーマット",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }

@@ -535,6 +535,56 @@
       "faq3A": "HWPX 是更新的 XML 格式（类似于 DOCX 和 DOC 的关系）。我们同时支持两种格式。",
       "faq4Q": "我的文件会被存储吗？",
       "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。"
+    },
+    "txt": {
+      "title": "TXT转Markdown — tomdnow",
+      "h1": "TXT转换为Markdown",
+      "displayName": "TXT转Markdown",
+      "subtitle": "将纯文本文件转换为格式化的 Markdown。",
+      "seoDescription": "免费在线 TXT转Markdown 转换器。上传文本文件，即刻获得 Markdown。",
+      "seoKeywords": "txt转markdown, 文本转markdown, txt to markdown",
+      "howTo1Step": "上传 TXT",
+      "howTo1Desc": "拖放或点击选择您的纯文本文件。",
+      "howTo2Step": "转换",
+      "howTo2Desc": "我们的工具将文本内容转换为整洁的 Markdown 格式。",
+      "howTo3Step": "下载",
+      "howTo3Desc": "预览转换结果并下载 .md 文件。",
+      "why1": "为纯文本笔记添加 Markdown 格式",
+      "why2": "为文档系统准备文本文件",
+      "why3": "以 Markdown 结构将纯文本输入 AI 工具",
+      "why4": "在 GitHub、Notion 或 Obsidian 中使用文本内容",
+      "faq1Q": "这个工具免费吗？",
+      "faq1A": "是的，完全免费，无需注册。",
+      "faq2Q": "支持什么编码？",
+      "faq2A": "完全支持 UTF-8 编码的文本文件。",
+      "faq3Q": "我的文件会被存储吗？",
+      "faq3A": "不会。文件在内存中处理，处理完毕后立即删除。"
+    },
+    "rtf": {
+      "title": "RTF转Markdown — tomdnow",
+      "h1": "RTF转换为Markdown",
+      "displayName": "RTF转Markdown",
+      "subtitle": "将富文本格式文件转换为简洁的 Markdown。",
+      "seoDescription": "免费在线 RTF转Markdown 转换器。上传 RTF 文件，即刻获得 Markdown。",
+      "seoKeywords": "rtf转markdown, 富文本转markdown, rtf to markdown",
+      "howTo1Step": "上传 RTF",
+      "howTo1Desc": "拖放或点击选择您的 RTF 文件。",
+      "howTo2Step": "转换",
+      "howTo2Desc": "我们的工具去除 RTF 格式，输出简洁的 Markdown。",
+      "howTo3Step": "下载",
+      "howTo3Desc": "预览转换结果并下载 .md 文件。",
+      "why1": "将旧版富文本文档转换为现代 Markdown",
+      "why2": "将 RTF 内容迁移到 GitHub、Notion 或 Obsidian",
+      "why3": "将 RTF 文档文本输入 AI 工具进行分析",
+      "why4": "将富文本文件归档为可搜索的纯文本",
+      "faq1Q": "这个工具免费吗？",
+      "faq1A": "是的，完全免费，无需注册。",
+      "faq2Q": "格式会保留吗？",
+      "faq2A": "文本内容、粗体和斜体会被保留。复杂的 RTF 布局会被简化以提高可读性。",
+      "faq3Q": "什么是 RTF？",
+      "faq3A": "RTF（富文本格式）是 Microsoft 开发的文档格式，大多数文字处理器都支持。",
+      "faq4Q": "我的文件会被存储吗？",
+      "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。"
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "认证",
     "authHeaderDesc": "在每个请求的 X-Api-Key 标头中包含您的 API 密钥。",
     "supportedFormats": "支持的格式",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }

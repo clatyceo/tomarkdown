@@ -535,6 +535,56 @@
       "faq3A": "HWPX ist das neuere XML-basierte Format (wie DOCX vs. DOC). Wir unterstützen beide.",
       "faq4Q": "Wird meine Datei gespeichert?",
       "faq4A": "Nein. Dateien werden im Arbeitsspeicher verarbeitet und sofort gelöscht."
+    },
+    "txt": {
+      "title": "TXT zu Markdown — tomdnow",
+      "h1": "TXT in Markdown umwandeln",
+      "displayName": "TXT zu Markdown",
+      "subtitle": "Konvertieren Sie Textdateien in formatiertes Markdown.",
+      "seoDescription": "Kostenloser Online TXT zu Markdown Konverter. Laden Sie Textdateien hoch und erhalten Sie sofort Markdown.",
+      "seoKeywords": "txt in markdown umwandeln, text zu markdown, txt zu md konvertieren",
+      "howTo1Step": "TXT hochladen",
+      "howTo1Desc": "Ziehen Sie Ihre Textdatei per Drag & Drop oder klicken Sie zur Auswahl.",
+      "howTo2Step": "Konvertieren",
+      "howTo2Desc": "Unser Tool wandelt den Textinhalt in sauberes Markdown-Format um.",
+      "howTo3Step": "Herunterladen",
+      "howTo3Desc": "Sehen Sie sich das Ergebnis in der Vorschau an und laden Sie Ihre .md-Datei herunter.",
+      "why1": "Markdown-Formatierung zu reinen Textnotizen hinzufügen",
+      "why2": "Textdateien für Dokumentationssysteme vorbereiten",
+      "why3": "Klartext mit Markdown-Struktur in KI-Tools einspeisen",
+      "why4": "Textinhalte in GitHub, Notion oder Obsidian verwenden",
+      "faq1Q": "Ist dieses Tool kostenlos?",
+      "faq1A": "Ja, vollständig kostenlos und ohne Registrierung.",
+      "faq2Q": "Welche Kodierung wird unterstützt?",
+      "faq2A": "UTF-8-kodierte Textdateien werden vollständig unterstützt.",
+      "faq3Q": "Wird meine Datei gespeichert?",
+      "faq3A": "Nein. Dateien werden im Arbeitsspeicher verarbeitet und sofort gelöscht."
+    },
+    "rtf": {
+      "title": "RTF zu Markdown — tomdnow",
+      "h1": "RTF in Markdown umwandeln",
+      "displayName": "RTF zu Markdown",
+      "subtitle": "Konvertieren Sie Rich-Text-Dateien in sauberes Markdown.",
+      "seoDescription": "Kostenloser Online RTF zu Markdown Konverter. Laden Sie RTF-Dateien hoch und erhalten Sie sofort Markdown.",
+      "seoKeywords": "rtf in markdown umwandeln, rich text zu markdown, rtf zu md konvertieren",
+      "howTo1Step": "RTF hochladen",
+      "howTo1Desc": "Ziehen Sie Ihre RTF-Datei per Drag & Drop oder klicken Sie zur Auswahl.",
+      "howTo2Step": "Konvertieren",
+      "howTo2Desc": "Unser Tool entfernt RTF-Formatierung und gibt sauberes Markdown aus.",
+      "howTo3Step": "Herunterladen",
+      "howTo3Desc": "Sehen Sie sich das Ergebnis in der Vorschau an und laden Sie Ihre .md-Datei herunter.",
+      "why1": "Legacy-Rich-Text-Dokumente in modernes Markdown konvertieren",
+      "why2": "RTF-Inhalte zu GitHub, Notion oder Obsidian migrieren",
+      "why3": "RTF-Dokumenttext in KI-Tools zur Analyse einspeisen",
+      "why4": "Rich-Text-Dateien als durchsuchbaren Klartext archivieren",
+      "faq1Q": "Ist dieses Tool kostenlos?",
+      "faq1A": "Ja, vollständig kostenlos und ohne Registrierung.",
+      "faq2Q": "Wird die Formatierung beibehalten?",
+      "faq2A": "Textinhalt, Fettdruck und Kursivschrift werden beibehalten. Komplexe RTF-Layouts werden für bessere Lesbarkeit vereinfacht.",
+      "faq3Q": "Was ist RTF?",
+      "faq3A": "RTF (Rich Text Format) ist ein von Microsoft entwickeltes Dokumentenformat, das von den meisten Textverarbeitungsprogrammen unterstützt wird.",
+      "faq4Q": "Wird meine Datei gespeichert?",
+      "faq4A": "Nein. Dateien werden im Arbeitsspeicher verarbeitet und sofort gelöscht."
     }
   },
   "about": {
@@ -623,6 +673,6 @@
     "authHeader": "Authentifizierung",
     "authHeaderDesc": "Fugen Sie Ihren API-Schlussel in den X-Api-Key-Header jeder Anfrage ein.",
     "supportedFormats": "Unterstutzte Formate",
-    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
   }
 }
