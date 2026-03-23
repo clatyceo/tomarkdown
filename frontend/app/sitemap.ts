@@ -1,20 +1,24 @@
 import type { MetadataRoute } from "next";
 import { tools } from "@/lib/tools";
 import { SITE_URL } from "@/lib/config";
+import { locales } from "@/i18n/config";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = SITE_URL;
+  const toolSlugs = Object.values(tools).map((t) => t.slug);
+  const entries: MetadataRoute.Sitemap = [];
 
-  return [
-    { url: base, lastModified: new Date(), changeFrequency: "weekly", priority: 1 },
-    ...Object.values(tools).map((tool) => ({
-      url: `${base}/${tool.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.9,
-    })),
-    { url: `${base}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 },
-    { url: `${base}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 },
-    { url: `${base}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 },
-  ];
+  for (const locale of locales) {
+    const prefix = `${SITE_URL}/${locale}`;
+    entries.push({ url: prefix, lastModified: new Date(), changeFrequency: "weekly", priority: 1 });
+
+    for (const slug of toolSlugs) {
+      entries.push({ url: `${prefix}/${slug}`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.9 });
+    }
+
+    entries.push({ url: `${prefix}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 });
+    entries.push({ url: `${prefix}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 });
+    entries.push({ url: `${prefix}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 });
+  }
+
+  return entries;
 }
