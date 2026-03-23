@@ -16,6 +16,7 @@ SUPPORTED_FILE_TYPES = {
     "msg",
     "ipynb",
     "zip",
+    "hwp", "hwpx",
     "jpg", "jpeg", "png", "gif", "webp",
 }
 
@@ -28,6 +29,30 @@ def convert_file(content: bytes, filename: str, file_type: str) -> dict:
 
     if len(content) > MAX_FILE_SIZE:
         raise FileTooLargeError(len(content), MAX_FILE_SIZE)
+
+    if file_type == "hwpx":
+        from hwp_converter import convert_hwpx_to_markdown
+        markdown = convert_hwpx_to_markdown(content)
+        return {
+            "markdown": markdown,
+            "metadata": {
+                "title": os.path.splitext(filename)[0],
+                "type": file_type,
+                "size": len(content),
+            },
+        }
+
+    if file_type == "hwp":
+        from hwp_converter import convert_hwp_to_markdown
+        markdown = convert_hwp_to_markdown(content)
+        return {
+            "markdown": markdown,
+            "metadata": {
+                "title": os.path.splitext(filename)[0],
+                "type": file_type,
+                "size": len(content),
+            },
+        }
 
     suffix = f".{file_type}"
     with tempfile.NamedTemporaryFile(suffix=suffix, delete=False) as tmp:

@@ -32,6 +32,7 @@ def test_convert_file_accepts_new_types():
     from converter import SUPPORTED_FILE_TYPES
     expected = {"pdf", "docx", "pptx", "xlsx", "xls", "html", "htm",
                 "epub", "csv", "json", "xml", "msg", "ipynb", "zip",
+                "hwp", "hwpx",
                 "jpg", "jpeg", "png", "gif", "webp"}
     assert expected == SUPPORTED_FILE_TYPES
 
