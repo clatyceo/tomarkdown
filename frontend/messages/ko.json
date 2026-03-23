@@ -37,7 +37,8 @@
     "privacy": "개인정보처리방침",
     "terms": "이용약관",
     "security": "보안",
-    "blog": "블로그"
+    "blog": "블로그",
+    "api": "API"
   },
   "blog": {
     "title": "블로그 — tomdnow",
@@ -574,5 +575,24 @@
     "message": "사이트 트래픽 분석과 사용자 경험 개선을 위해 쿠키를 사용합니다.",
     "accept": "수락",
     "decline": "거부"
+  },
+  "api": {
+    "title": "API 문서 — tomdnow",
+    "h1": "API 문서",
+    "subtitle": "파일-마크다운 변환을 워크플로우에 통합하세요",
+    "getKey": "API 키 발급",
+    "getKeyDesc": "이메일을 포함한 POST 요청을 보내 API 키를 받으세요.",
+    "convert": "파일 변환",
+    "convertDesc": "API 키와 함께 파일을 업로드하면 마크다운 결과를 받을 수 있습니다.",
+    "response": "응답 형식",
+    "responseDesc": "API는 변환된 마크다운과 메타데이터가 포함된 JSON 객체를 반환합니다.",
+    "rateLimits": "요청 제한",
+    "rateLimitsDesc": "API 요청은 티어에 따라 일일 제한이 적용됩니다.",
+    "freeTier": "Free: 일 50회",
+    "proTier": "Pro: 일 500회",
+    "authHeader": "인증",
+    "authHeaderDesc": "모든 요청에 X-Api-Key 헤더에 API 키를 포함하세요.",
+    "supportedFormats": "지원 형식",
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
   }
 }

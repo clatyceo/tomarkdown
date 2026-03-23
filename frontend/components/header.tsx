@@ -145,6 +145,12 @@ export default function Header() {
           >
             {t("blog")}
           </Link>
+          <Link
+            href="/docs/api"
+            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t("api")}
+          </Link>
         </nav>
 
         <button
@@ -190,6 +196,13 @@ export default function Header() {
               onClick={() => setMobileOpen(false)}
             >
               {t("blog")}
+            </Link>
+            <Link
+              href="/docs/api"
+              className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("api")}
             </Link>
           </div>
         </div>

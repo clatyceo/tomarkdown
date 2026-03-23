@@ -37,7 +37,8 @@
     "privacy": "Privacidade",
     "terms": "Termos",
     "security": "Segurança",
-    "blog": "Blog"
+    "blog": "Blog",
+    "api": "API"
   },
   "blog": {
     "title": "Blog — tomdnow",
@@ -574,5 +575,24 @@
     "message": "Usamos cookies para analisar o tráfego do site e melhorar sua experiência.",
     "accept": "Aceitar",
     "decline": "Recusar"
+  },
+  "api": {
+    "title": "Documentacao da API — tomdnow",
+    "h1": "Documentacao da API",
+    "subtitle": "Integre a conversao de arquivos para Markdown ao seu fluxo de trabalho",
+    "getKey": "Obter uma chave API",
+    "getKeyDesc": "Envie uma requisicao POST com seu e-mail para receber uma chave API.",
+    "convert": "Converter um arquivo",
+    "convertDesc": "Envie um arquivo com sua chave API para obter a saida em Markdown.",
+    "response": "Formato de resposta",
+    "responseDesc": "A API retorna um objeto JSON com o Markdown convertido e os metadados.",
+    "rateLimits": "Limites de uso",
+    "rateLimitsDesc": "As requisicoes da API tem um limite diario de acordo com seu nivel.",
+    "freeTier": "Free: 50 requisicoes/dia",
+    "proTier": "Pro: 500 requisicoes/dia",
+    "authHeader": "Autenticacao",
+    "authHeaderDesc": "Inclua sua chave API no cabecalho X-Api-Key em cada requisicao.",
+    "supportedFormats": "Formatos suportados",
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
   }
 }

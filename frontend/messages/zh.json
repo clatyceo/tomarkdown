@@ -37,7 +37,8 @@
     "privacy": "隐私政策",
     "terms": "使用条款",
     "security": "安全",
-    "blog": "博客"
+    "blog": "博客",
+    "api": "API"
   },
   "blog": {
     "title": "博客 — tomdnow",
@@ -574,5 +575,24 @@
     "message": "我们使用Cookie来分析网站流量并改善您的体验。",
     "accept": "接受",
     "decline": "拒绝"
+  },
+  "api": {
+    "title": "API 文档 — tomdnow",
+    "h1": "API 文档",
+    "subtitle": "将文件转Markdown功能集成到您的工作流程中",
+    "getKey": "获取 API 密钥",
+    "getKeyDesc": "发送包含电子邮件的 POST 请求以获取 API 密钥。",
+    "convert": "转换文件",
+    "convertDesc": "使用 API 密钥上传文件以获取 Markdown 输出。",
+    "response": "响应格式",
+    "responseDesc": "API 返回包含转换后的 Markdown 和元数据的 JSON 对象。",
+    "rateLimits": "速率限制",
+    "rateLimitsDesc": "API 请求根据您的层级有每日限制。",
+    "freeTier": "Free: 每天 50 次请求",
+    "proTier": "Pro: 每天 500 次请求",
+    "authHeader": "认证",
+    "authHeaderDesc": "在每个请求的 X-Api-Key 标头中包含您的 API 密钥。",
+    "supportedFormats": "支持的格式",
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
   }
 }

@@ -8,6 +8,7 @@ from converter import convert_file, convert_url
 from config import ALLOWED_ORIGINS, CONVERSION_TIMEOUT, MAX_FILE_SIZE
 from rate_limiter import RateLimiter
 from errors import ConversionError, ConversionTimeoutError
+from api_v1 import router as api_v1_router
 
 logger = logging.getLogger(__name__)
 
@@ -21,6 +22,8 @@ app.add_middleware(
 )
 
 rate_limiter = RateLimiter()
+
+app.include_router(api_v1_router)
 
 
 # --- Global Error Handlers ---

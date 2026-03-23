@@ -37,7 +37,8 @@
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
     "security": "セキュリティ",
-    "blog": "ブログ"
+    "blog": "ブログ",
+    "api": "API"
   },
   "blog": {
     "title": "ブログ — tomdnow",
@@ -574,5 +575,24 @@
     "message": "サイトのトラフィック分析と利便性向上のためにCookieを使用しています。",
     "accept": "同意する",
     "decline": "拒否する"
+  },
+  "api": {
+    "title": "APIドキュメント — tomdnow",
+    "h1": "APIドキュメント",
+    "subtitle": "ファイルからマークダウンへの変換をワークフローに統合",
+    "getKey": "APIキーの取得",
+    "getKeyDesc": "メールアドレスを含むPOSTリクエストを送信してAPIキーを取得します。",
+    "convert": "ファイルを変換",
+    "convertDesc": "APIキーと共にファイルをアップロードするとマークダウン出力を取得できます。",
+    "response": "レスポンス形式",
+    "responseDesc": "APIは変換されたマークダウンとメタデータを含むJSONオブジェクトを返します。",
+    "rateLimits": "レート制限",
+    "rateLimitsDesc": "APIリクエストはティアに応じて1日あたりの制限があります。",
+    "freeTier": "Free: 1日50リクエスト",
+    "proTier": "Pro: 1日500リクエスト",
+    "authHeader": "認証",
+    "authHeaderDesc": "すべてのリクエストにX-Api-Keyヘッダーを含めてください。",
+    "supportedFormats": "対応フォーマット",
+    "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, JPG, PNG, GIF, WebP"
   }
 }
