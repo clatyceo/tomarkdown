@@ -31,7 +31,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://tomarkdown.com"),
+    metadataBase: new URL("https://tomdnow.com"),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -39,7 +39,7 @@ export async function generateMetadata({
     },
     alternates: {
       languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `https://tomarkdown.com/${l}`])
+        routing.locales.map((l) => [l, `https://tomdnow.com/${l}`])
       ),
     },
   };
