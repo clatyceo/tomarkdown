@@ -12,7 +12,7 @@ export default function ToolCard({ title, description, href, icon, color }: Tool
   return (
     <Link
       href={href}
-      className="group block rounded-2xl bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-gray-200 transition-all"
+      className="group block rounded-2xl bg-white p-6 shadow-sm border border-gray-100 hover:shadow-md hover:border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition-all"
     >
       <div
         className="w-14 h-14 rounded-xl flex items-center justify-center text-2xl mb-4"

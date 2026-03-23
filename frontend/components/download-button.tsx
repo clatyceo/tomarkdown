@@ -43,6 +43,7 @@ export default function DownloadButton({ markdown, filename }: DownloadButtonPro
       </button>
       <button
         onClick={handleCopy}
+        aria-live="polite"
         className="px-5 py-2.5 bg-gray-200 text-gray-700 text-sm font-medium rounded-xl hover:bg-gray-300 transition-colors"
       >
         {copied ? t("copied") : t("copy")}

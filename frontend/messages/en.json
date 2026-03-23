@@ -17,7 +17,10 @@
     "dragDrop": "Drag & drop your file here",
     "orBrowse": "or click to browse",
     "copyright": "© {year} AllToMD. All rights reserved.",
-    "toggleMenu": "Toggle menu"
+    "toggleMenu": "Toggle menu",
+    "fileInputLabel": "Select file to convert",
+    "urlInputLabel": "Enter URL to convert",
+    "uploadArea": "File upload area"
   },
   "nav": {
     "documents": "Documents",

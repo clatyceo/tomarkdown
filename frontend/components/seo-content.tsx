@@ -34,14 +34,14 @@ export default async function SeoContent({ tool }: { tool: ToolConfig }) {
 
       <section>
         <h2 className="text-2xl font-bold text-gray-900">{t("faqTitle")}</h2>
-        <div className="mt-4 space-y-4">
+        <dl className="mt-4 space-y-4">
           {tool.faq.map((item, i) => (
             <div key={i}>
-              <h3 className="font-medium text-gray-900">{item.q}</h3>
-              <p className="mt-1 text-sm text-gray-500">{item.a}</p>
+              <dt className="font-medium text-gray-900">{item.q}</dt>
+              <dd className="mt-1 text-sm text-gray-500">{item.a}</dd>
             </div>
           ))}
-        </div>
+        </dl>
       </section>
 
       <script

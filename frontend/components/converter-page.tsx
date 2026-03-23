@@ -61,7 +61,7 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
       </div>
 
       {error && (
-        <p className="mt-4 text-sm text-red-600 text-center">{error}</p>
+        <p role="alert" aria-live="polite" className="mt-4 text-sm text-red-600 text-center">{error}</p>
       )}
 
       {markdown && (

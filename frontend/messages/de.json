@@ -17,7 +17,10 @@
     "dragDrop": "Datei hierher ziehen & ablegen",
     "orBrowse": "oder klicken zum Durchsuchen",
     "copyright": "© {year} AllToMD. Alle Rechte vorbehalten.",
-    "toggleMenu": "Menü umschalten"
+    "toggleMenu": "Menü umschalten",
+    "fileInputLabel": "Datei zum Konvertieren auswählen",
+    "urlInputLabel": "URL zum Konvertieren eingeben",
+    "uploadArea": "Datei-Upload-Bereich"
   },
   "nav": {
     "documents": "Dokumente",

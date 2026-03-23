@@ -58,6 +58,8 @@ export default function FileUploader({ accept, onFileSelect, onError, isLoading 
       onDragOver={(e) => { e.preventDefault(); setIsDragging(true); }}
       onDragLeave={() => setIsDragging(false)}
       onDrop={handleDrop}
+      role="button"
+      aria-label={t("uploadArea")}
       className={`relative flex flex-col items-center justify-center w-full h-52 rounded-2xl border-2 border-dashed transition-colors cursor-pointer ${
         isDragging
           ? "border-blue-500 bg-blue-50"
@@ -68,6 +70,7 @@ export default function FileUploader({ accept, onFileSelect, onError, isLoading 
         type="file"
         accept={accept}
         onChange={handleChange}
+        aria-label={t("fileInputLabel")}
         className="absolute inset-0 opacity-0 cursor-pointer"
         disabled={isLoading}
       />

@@ -17,7 +17,10 @@
     "dragDrop": "파일을 여기에 끌어다 놓으세요",
     "orBrowse": "또는 클릭하여 파일 선택",
     "copyright": "© {year} AllToMD. All rights reserved.",
-    "toggleMenu": "메뉴 열기/닫기"
+    "toggleMenu": "메뉴 열기/닫기",
+    "fileInputLabel": "변환할 파일 선택",
+    "urlInputLabel": "변환할 URL 입력",
+    "uploadArea": "파일 업로드 영역"
   },
   "nav": {
     "documents": "문서",

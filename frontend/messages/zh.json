@@ -17,7 +17,10 @@
     "dragDrop": "将文件拖放到此处",
     "orBrowse": "或点击选择文件",
     "copyright": "© {year} AllToMD. 保留所有权利。",
-    "toggleMenu": "切换菜单"
+    "toggleMenu": "切换菜单",
+    "fileInputLabel": "选择要转换的文件",
+    "urlInputLabel": "输入要转换的URL",
+    "uploadArea": "文件上传区域"
   },
   "nav": {
     "documents": "文档",
