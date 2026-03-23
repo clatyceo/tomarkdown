@@ -139,6 +139,12 @@ export default function Header() {
               </div>
             </div>
           ))}
+          <Link
+            href="/blog"
+            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t("blog")}
+          </Link>
         </nav>
 
         <button
@@ -177,6 +183,15 @@ export default function Header() {
               ))}
             </div>
           ))}
+          <div className="border-t border-gray-100">
+            <Link
+              href="/blog"
+              className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("blog")}
+            </Link>
+          </div>
         </div>
       )}
     </header>

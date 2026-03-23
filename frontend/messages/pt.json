@@ -29,7 +29,16 @@
     "about": "Sobre",
     "privacy": "Privacidade",
     "terms": "Termos",
-    "security": "Segurança"
+    "security": "Segurança",
+    "blog": "Blog"
+  },
+  "blog": {
+    "title": "Blog — tomdnow",
+    "h1": "Blog",
+    "subtitle": "Dicas e guias para trabalhar com Markdown",
+    "readMore": "Leia mais",
+    "noPostsYet": "Ainda sem publicações. Volte em breve!",
+    "backToBlog": "Voltar ao Blog"
   },
   "home": {
     "title": "Converta Qualquer Arquivo para <highlight>Markdown</highlight>",

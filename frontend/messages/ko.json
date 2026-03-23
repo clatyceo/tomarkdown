@@ -29,7 +29,16 @@
     "about": "소개",
     "privacy": "개인정보처리방침",
     "terms": "이용약관",
-    "security": "보안"
+    "security": "보안",
+    "blog": "블로그"
+  },
+  "blog": {
+    "title": "블로그 — tomdnow",
+    "h1": "블로그",
+    "subtitle": "마크다운 활용 팁과 가이드",
+    "readMore": "더 읽기",
+    "noPostsYet": "아직 게시물이 없습니다. 곧 다시 확인해 주세요!",
+    "backToBlog": "블로그로 돌아가기"
   },
   "home": {
     "title": "모든 파일을 <highlight>마크다운</highlight>으로 변환",

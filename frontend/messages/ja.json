@@ -29,7 +29,16 @@
     "about": "このサイトについて",
     "privacy": "プライバシーポリシー",
     "terms": "利用規約",
-    "security": "セキュリティ"
+    "security": "セキュリティ",
+    "blog": "ブログ"
+  },
+  "blog": {
+    "title": "ブログ — tomdnow",
+    "h1": "ブログ",
+    "subtitle": "マークダウン活用のヒントとガイド",
+    "readMore": "続きを読む",
+    "noPostsYet": "まだ投稿がありません。近日公開予定です！",
+    "backToBlog": "ブログに戻る"
   },
   "home": {
     "title": "あらゆるファイルを <highlight>マークダウン</highlight> に変換",

@@ -29,7 +29,16 @@
     "about": "关于",
     "privacy": "隐私政策",
     "terms": "使用条款",
-    "security": "安全"
+    "security": "安全",
+    "blog": "博客"
+  },
+  "blog": {
+    "title": "博客 — tomdnow",
+    "h1": "博客",
+    "subtitle": "Markdown 使用技巧与指南",
+    "readMore": "阅读更多",
+    "noPostsYet": "暂无文章，请稍后再来！",
+    "backToBlog": "返回博客"
   },
   "home": {
     "title": "将任意文件转换为 <highlight>Markdown</highlight>",

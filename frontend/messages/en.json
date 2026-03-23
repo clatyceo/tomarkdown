@@ -29,7 +29,16 @@
     "about": "About",
     "privacy": "Privacy",
     "terms": "Terms",
-    "security": "Security"
+    "security": "Security",
+    "blog": "Blog"
+  },
+  "blog": {
+    "title": "Blog — tomdnow",
+    "h1": "Blog",
+    "subtitle": "Tips and guides for working with Markdown",
+    "readMore": "Read more",
+    "noPostsYet": "No posts yet. Check back soon!",
+    "backToBlog": "Back to Blog"
   },
   "home": {
     "title": "Convert Any File to <highlight>Markdown</highlight>",
