@@ -28,7 +28,8 @@
     "media": "Médias",
     "about": "À propos",
     "privacy": "Confidentialité",
-    "terms": "Conditions"
+    "terms": "Conditions",
+    "security": "Sécurité"
   },
   "home": {
     "title": "Convertir n'importe quel fichier en <highlight>Markdown</highlight>",
@@ -462,5 +463,33 @@
     "usageText": "Vous pouvez utiliser AllToMD à des fins personnelles et commerciales. Ne téléchargez pas de contenu illégal ou protégé par le droit d'auteur sans autorisation.",
     "limitationsTitle": "Limitations",
     "limitationsText": "Nous nous réservons le droit de limiter l'utilisation pour prévenir les abus. La taille des fichiers est limitée à 10 Mo par conversion."
+  },
+  "security": {
+    "title": "Sécurité — AllToMD",
+    "h1": "Vos fichiers, votre vie privée",
+    "subtitle": "AllToMD est conçu dès le départ pour garantir que vos fichiers ne sont jamais stockés, jamais partagés et jamais exposés.",
+    "memoryProcessingTitle": "Traitement en mémoire",
+    "memoryProcessingDesc": "Vos fichiers sont traités entièrement en mémoire. Rien n'est jamais écrit sur le disque de nos serveurs.",
+    "instantDeletionTitle": "Suppression instantanée",
+    "instantDeletionDesc": "Dès que la conversion est terminée, toutes les données du fichier sont immédiatement purgées de la mémoire.",
+    "tlsEncryptionTitle": "Chiffrement TLS",
+    "tlsEncryptionDesc": "Toutes les données transmises entre votre navigateur et nos serveurs sont protégées par le chiffrement TLS.",
+    "noAccountTitle": "Aucun compte requis",
+    "noAccountDesc": "Nous ne vous demandons jamais de vous inscrire ou de vous connecter. Aucune information personnelle n'est collectée.",
+    "openSourceTitle": "Open source",
+    "openSourceDesc": "Notre moteur de conversion est open source. Vous pouvez inspecter le code et vérifier nos mesures de sécurité vous-même.",
+    "comparisonTitle": "Comment nous nous comparons",
+    "comparisonDesc": "Découvrez comment AllToMD se compare aux autres services de conversion de fichiers en matière de confidentialité et de sécurité.",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "Autres services",
+    "comparisonStorage": "Stockage des fichiers",
+    "comparisonStorageUs": "Aucun (mémoire uniquement)",
+    "comparisonStorageOthers": "1 à 24 heures sur le serveur",
+    "comparisonDeletion": "Suppression des fichiers",
+    "comparisonDeletionUs": "Instantanée (après conversion)",
+    "comparisonDeletionOthers": "Programmée (heures plus tard)",
+    "comparisonAccount": "Compte requis",
+    "comparisonAccountUs": "Non",
+    "comparisonAccountOthers": "Souvent oui"
   }
 }

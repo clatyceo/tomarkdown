@@ -28,7 +28,8 @@
     "media": "미디어",
     "about": "소개",
     "privacy": "개인정보처리방침",
-    "terms": "이용약관"
+    "terms": "이용약관",
+    "security": "보안"
   },
   "home": {
     "title": "모든 파일을 <highlight>마크다운</highlight>으로 변환",
@@ -462,5 +463,33 @@
     "usageText": "AllToMD는 개인 및 상업적 목적으로 사용할 수 있습니다. 불법적이거나 허가 없이 저작권이 있는 콘텐츠를 업로드하지 마십시오.",
     "limitationsTitle": "제한 사항",
     "limitationsText": "남용을 방지하기 위해 사용량을 제한할 수 있습니다. 1회 변환당 파일 크기는 10MB로 제한됩니다."
+  },
+  "security": {
+    "title": "보안 — AllToMD",
+    "h1": "당신의 파일, 당신의 개인정보",
+    "subtitle": "AllToMD는 파일이 저장되거나 공유되거나 위험에 노출되지 않도록 처음부터 설계되었습니다.",
+    "memoryProcessingTitle": "메모리 내 처리",
+    "memoryProcessingDesc": "파일은 전적으로 메모리에서 처리됩니다. 서버 디스크에 기록되는 것은 없습니다.",
+    "instantDeletionTitle": "즉시 삭제",
+    "instantDeletionDesc": "변환이 완료되는 즉시 모든 파일 데이터가 메모리에서 완전히 제거됩니다.",
+    "tlsEncryptionTitle": "TLS 암호화",
+    "tlsEncryptionDesc": "브라우저와 서버 간에 전송되는 모든 데이터는 TLS 암호화로 보호됩니다.",
+    "noAccountTitle": "계정 불필요",
+    "noAccountDesc": "회원가입이나 로그인을 요구하지 않습니다. 개인정보를 수집하지 않습니다.",
+    "openSourceTitle": "오픈 소스",
+    "openSourceDesc": "변환 엔진은 오픈 소스입니다. 코드를 직접 확인하고 보안을 검증할 수 있습니다.",
+    "comparisonTitle": "비교해 보세요",
+    "comparisonDesc": "개인정보 보호와 보안 측면에서 AllToMD가 다른 파일 변환 서비스와 어떻게 다른지 확인하세요.",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "기타 서비스",
+    "comparisonStorage": "파일 저장",
+    "comparisonStorageUs": "없음 (메모리에서만 처리)",
+    "comparisonStorageOthers": "서버에 1~24시간 보관",
+    "comparisonDeletion": "파일 삭제",
+    "comparisonDeletionUs": "즉시 (변환 후)",
+    "comparisonDeletionOthers": "예약 삭제 (수시간 후)",
+    "comparisonAccount": "계정 필요 여부",
+    "comparisonAccountUs": "아니오",
+    "comparisonAccountOthers": "대부분 필요"
   }
 }

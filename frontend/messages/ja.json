@@ -28,7 +28,8 @@
     "media": "メディア",
     "about": "このサイトについて",
     "privacy": "プライバシーポリシー",
-    "terms": "利用規約"
+    "terms": "利用規約",
+    "security": "セキュリティ"
   },
   "home": {
     "title": "あらゆるファイルを <highlight>マークダウン</highlight> に変換",
@@ -462,5 +463,33 @@
     "usageText": "AllToMD は個人利用および商用利用が可能です。違法なコンテンツや、許可のない著作権保護コンテンツのアップロードはご遠慮ください。",
     "limitationsTitle": "制限事項",
     "limitationsText": "不正利用防止のため、利用を制限する場合がございます。ファイルサイズは1回の変換につき最大10MBです。"
+  },
+  "security": {
+    "title": "セキュリティ — AllToMD",
+    "h1": "あなたのファイル、あなたのプライバシー",
+    "subtitle": "AllToMD はファイルが保存・共有・漏洩されることのないよう、ゼロから設計されています。",
+    "memoryProcessingTitle": "メモリ内処理",
+    "memoryProcessingDesc": "ファイルは完全にメモリ上で処理されます。サーバーのディスクには一切書き込まれません。",
+    "instantDeletionTitle": "即時削除",
+    "instantDeletionDesc": "変換が完了した瞬間、すべてのファイルデータはメモリから即座に消去されます。",
+    "tlsEncryptionTitle": "TLS暗号化",
+    "tlsEncryptionDesc": "ブラウザとサーバー間のすべての通信はTLS暗号化で保護されています。",
+    "noAccountTitle": "アカウント不要",
+    "noAccountDesc": "会員登録やログインは一切不要です。個人情報を収集することはありません。",
+    "openSourceTitle": "オープンソース",
+    "openSourceDesc": "変換エンジンはオープンソースです。コードを確認し、セキュリティを直接検証できます。",
+    "comparisonTitle": "他サービスとの比較",
+    "comparisonDesc": "プライバシーとセキュリティの観点で、AllToMD が他のファイル変換サービスとどう異なるかご確認ください。",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "他のサービス",
+    "comparisonStorage": "ファイル保存",
+    "comparisonStorageUs": "なし（メモリのみ）",
+    "comparisonStorageOthers": "サーバーに1〜24時間保存",
+    "comparisonDeletion": "ファイル削除",
+    "comparisonDeletionUs": "即時（変換後）",
+    "comparisonDeletionOthers": "予約削除（数時間後）",
+    "comparisonAccount": "アカウント要否",
+    "comparisonAccountUs": "不要",
+    "comparisonAccountOthers": "多くの場合必要"
   }
 }

@@ -28,7 +28,8 @@
     "media": "媒体",
     "about": "关于",
     "privacy": "隐私政策",
-    "terms": "使用条款"
+    "terms": "使用条款",
+    "security": "安全"
   },
   "home": {
     "title": "将任意文件转换为 <highlight>Markdown</highlight>",
@@ -462,5 +463,33 @@
     "usageText": "您可以将 AllToMD 用于个人和商业用途。请勿在未经授权的情况下上传违法或受版权保护的内容。",
     "limitationsTitle": "使用限制",
     "limitationsText": "我们保留限制使用以防止滥用的权利。每次转换的文件大小限制为 10MB。"
+  },
+  "security": {
+    "title": "安全 — AllToMD",
+    "h1": "您的文件，您的隐私",
+    "subtitle": "AllToMD 从设计之初就确保您的文件不会被存储、不会被共享、不会面临任何风险。",
+    "memoryProcessingTitle": "内存处理",
+    "memoryProcessingDesc": "您的文件完全在内存中处理，服务器磁盘上不会写入任何数据。",
+    "instantDeletionTitle": "即时删除",
+    "instantDeletionDesc": "转换完成的那一刻，所有文件数据立即从内存中清除。",
+    "tlsEncryptionTitle": "TLS 加密",
+    "tlsEncryptionDesc": "浏览器与服务器之间传输的所有数据均受 TLS 加密保护。",
+    "noAccountTitle": "无需账户",
+    "noAccountDesc": "我们从不要求您注册或登录，也从不收集任何个人信息。",
+    "openSourceTitle": "开源",
+    "openSourceDesc": "我们的转换引擎是开源的，您可以查看代码并亲自验证安全性。",
+    "comparisonTitle": "对比一下",
+    "comparisonDesc": "看看 AllToMD 在隐私和安全方面与其他文件转换服务有何不同。",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "其他服务",
+    "comparisonStorage": "文件存储",
+    "comparisonStorageUs": "无（仅内存处理）",
+    "comparisonStorageOthers": "在服务器上存储 1-24 小时",
+    "comparisonDeletion": "文件删除",
+    "comparisonDeletionUs": "即时（转换后）",
+    "comparisonDeletionOthers": "定时删除（数小时后）",
+    "comparisonAccount": "是否需要账户",
+    "comparisonAccountUs": "否",
+    "comparisonAccountOthers": "通常需要"
   }
 }

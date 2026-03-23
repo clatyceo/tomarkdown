@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }
 
     entries.push({ url: `${prefix}/about`, lastModified: new Date(), changeFrequency: "monthly", priority: 0.3 });
+    entries.push({ url: `${prefix}/security`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.5 });
     entries.push({ url: `${prefix}/privacy`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 });
     entries.push({ url: `${prefix}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.1 });
   }

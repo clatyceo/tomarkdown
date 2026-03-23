@@ -28,7 +28,8 @@
     "media": "Multimedia",
     "about": "Acerca de",
     "privacy": "Privacidad",
-    "terms": "Términos"
+    "terms": "Términos",
+    "security": "Seguridad"
   },
   "home": {
     "title": "Convierte cualquier archivo a <highlight>Markdown</highlight>",
@@ -462,5 +463,33 @@
     "usageText": "Puede utilizar AllToMD con fines personales y comerciales. No suba contenido ilegal ni protegido por derechos de autor sin autorización.",
     "limitationsTitle": "Limitaciones",
     "limitationsText": "Nos reservamos el derecho de limitar el uso para prevenir abusos. El tamaño de archivo está limitado a 10 MB por conversión."
+  },
+  "security": {
+    "title": "Seguridad — AllToMD",
+    "h1": "Sus archivos, su privacidad",
+    "subtitle": "AllToMD fue diseñado desde cero para que sus archivos nunca sean almacenados, compartidos ni expuestos a riesgos.",
+    "memoryProcessingTitle": "Procesamiento en memoria",
+    "memoryProcessingDesc": "Sus archivos se procesan completamente en memoria. Nada se escribe en el disco de nuestros servidores.",
+    "instantDeletionTitle": "Eliminación instantánea",
+    "instantDeletionDesc": "En el momento en que la conversión finaliza, todos los datos del archivo se eliminan inmediatamente de la memoria.",
+    "tlsEncryptionTitle": "Cifrado TLS",
+    "tlsEncryptionDesc": "Todos los datos transmitidos entre su navegador y nuestros servidores están protegidos con cifrado TLS.",
+    "noAccountTitle": "Sin cuenta necesaria",
+    "noAccountDesc": "No pedimos que se registre ni inicie sesión. No se recopila ninguna información personal.",
+    "openSourceTitle": "Código abierto",
+    "openSourceDesc": "Nuestro motor de conversión es de código abierto. Puede inspeccionar el código y verificar nuestras medidas de seguridad.",
+    "comparisonTitle": "Cómo nos comparamos",
+    "comparisonDesc": "Vea cómo se compara AllToMD con otros servicios de conversión de archivos en privacidad y seguridad.",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "Otros servicios",
+    "comparisonStorage": "Almacenamiento de archivos",
+    "comparisonStorageUs": "Ninguno (solo en memoria)",
+    "comparisonStorageOthers": "1-24 horas en servidor",
+    "comparisonDeletion": "Eliminación de archivos",
+    "comparisonDeletionUs": "Instantánea (tras la conversión)",
+    "comparisonDeletionOthers": "Programada (horas después)",
+    "comparisonAccount": "Cuenta necesaria",
+    "comparisonAccountUs": "No",
+    "comparisonAccountOthers": "A menudo sí"
   }
 }

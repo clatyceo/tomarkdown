@@ -28,7 +28,8 @@
     "media": "Medien",
     "about": "Über uns",
     "privacy": "Datenschutz",
-    "terms": "AGB"
+    "terms": "AGB",
+    "security": "Sicherheit"
   },
   "home": {
     "title": "Jede Datei in <highlight>Markdown</highlight> umwandeln",
@@ -462,5 +463,33 @@
     "usageText": "Sie dürfen AllToMD für private und gewerbliche Zwecke nutzen. Laden Sie keine illegalen oder urheberrechtlich geschützten Inhalte ohne Genehmigung hoch.",
     "limitationsTitle": "Einschränkungen",
     "limitationsText": "Wir behalten uns das Recht vor, die Nutzung zur Missbrauchsvermeidung einzuschränken. Die Dateigröße ist auf 10 MB pro Konvertierung begrenzt."
+  },
+  "security": {
+    "title": "Sicherheit — AllToMD",
+    "h1": "Ihre Dateien, Ihre Privatsphäre",
+    "subtitle": "AllToMD wurde von Grund auf so entwickelt, dass Ihre Dateien niemals gespeichert, geteilt oder gefährdet werden.",
+    "memoryProcessingTitle": "Verarbeitung im Arbeitsspeicher",
+    "memoryProcessingDesc": "Ihre Dateien werden vollständig im Arbeitsspeicher verarbeitet. Auf unseren Servern wird nichts auf die Festplatte geschrieben.",
+    "instantDeletionTitle": "Sofortige Löschung",
+    "instantDeletionDesc": "Sobald die Konvertierung abgeschlossen ist, werden alle Dateidaten sofort aus dem Arbeitsspeicher gelöscht.",
+    "tlsEncryptionTitle": "TLS-Verschlüsselung",
+    "tlsEncryptionDesc": "Alle zwischen Ihrem Browser und unseren Servern übertragenen Daten sind durch TLS-Verschlüsselung geschützt.",
+    "noAccountTitle": "Kein Konto erforderlich",
+    "noAccountDesc": "Wir verlangen keine Registrierung oder Anmeldung. Es werden keinerlei persönliche Daten erhoben.",
+    "openSourceTitle": "Open Source",
+    "openSourceDesc": "Unsere Konvertierungs-Engine ist Open Source. Sie können den Code einsehen und unsere Sicherheitsmaßnahmen selbst überprüfen.",
+    "comparisonTitle": "So schneiden wir ab",
+    "comparisonDesc": "Sehen Sie, wie AllToMD im Vergleich zu anderen Dateikonvertierungsdiensten in Sachen Datenschutz und Sicherheit abschneidet.",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "Andere Dienste",
+    "comparisonStorage": "Dateispeicherung",
+    "comparisonStorageUs": "Keine (nur Arbeitsspeicher)",
+    "comparisonStorageOthers": "1–24 Stunden auf dem Server",
+    "comparisonDeletion": "Dateilöschung",
+    "comparisonDeletionUs": "Sofort (nach Konvertierung)",
+    "comparisonDeletionOthers": "Geplant (Stunden später)",
+    "comparisonAccount": "Konto erforderlich",
+    "comparisonAccountUs": "Nein",
+    "comparisonAccountOthers": "Oft ja"
   }
 }

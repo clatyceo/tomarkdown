@@ -28,7 +28,8 @@
     "media": "Media",
     "about": "About",
     "privacy": "Privacy",
-    "terms": "Terms"
+    "terms": "Terms",
+    "security": "Security"
   },
   "home": {
     "title": "Convert Any File to <highlight>Markdown</highlight>",
@@ -462,5 +463,33 @@
     "usageText": "You may use AllToMD for personal and commercial purposes. Do not upload illegal or copyrighted content without authorization.",
     "limitationsTitle": "Limitations",
     "limitationsText": "We reserve the right to limit usage to prevent abuse. File size is limited to 10MB per conversion."
+  },
+  "security": {
+    "title": "Security — AllToMD",
+    "h1": "Your Files, Your Privacy",
+    "subtitle": "AllToMD is built from the ground up to ensure your files are never stored, never shared, and never at risk.",
+    "memoryProcessingTitle": "In-Memory Processing",
+    "memoryProcessingDesc": "Your files are processed entirely in memory. Nothing is ever written to disk on our servers.",
+    "instantDeletionTitle": "Instant Deletion",
+    "instantDeletionDesc": "The moment your conversion is complete, all file data is immediately purged from memory.",
+    "tlsEncryptionTitle": "TLS Encryption",
+    "tlsEncryptionDesc": "All data transmitted between your browser and our servers is protected with TLS encryption.",
+    "noAccountTitle": "No Account Required",
+    "noAccountDesc": "We never ask you to sign up or log in. No personal information is collected, ever.",
+    "openSourceTitle": "Open Source",
+    "openSourceDesc": "Our conversion engine is open source. You can inspect the code and verify our security claims yourself.",
+    "comparisonTitle": "How We Compare",
+    "comparisonDesc": "See how AllToMD stacks up against other file conversion services when it comes to privacy and security.",
+    "comparisonUs": "ToMarkdown",
+    "comparisonOthers": "Other Services",
+    "comparisonStorage": "File Storage",
+    "comparisonStorageUs": "None (memory only)",
+    "comparisonStorageOthers": "1–24 hours on server",
+    "comparisonDeletion": "File Deletion",
+    "comparisonDeletionUs": "Instant (after conversion)",
+    "comparisonDeletionOthers": "Scheduled (hours later)",
+    "comparisonAccount": "Account Required",
+    "comparisonAccountUs": "No",
+    "comparisonAccountOthers": "Often yes"
   }
 }
