@@ -16,6 +16,7 @@ export function sanitizeFilename(title: string, fallback: string): string {
 
 export default function ConverterPage({ tool }: { tool: ToolConfig }) {
   const t = useTranslations("common");
+  const tTool = useTranslations(`tools.${tool.key}`);
   const [markdown, setMarkdown] = useState("");
   const [title, setTitle] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -39,9 +40,9 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
   return (
     <div className="max-w-3xl mx-auto px-4 py-16">
       <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 text-center">
-        {tool.h1}
+        {tTool("h1")}
       </h1>
-      <p className="mt-3 text-gray-500 text-center">{tool.subtitle}</p>
+      <p className="mt-3 text-gray-500 text-center">{tTool("subtitle")}</p>
 
       <div className="mt-10">
         {tool.inputMode === "file" ? (

@@ -11,6 +11,7 @@ const categoryKeys: Record<string, string> = {
 export default function Home() {
   const t = useTranslations("home");
   const tNav = useTranslations("nav");
+  const tTools = useTranslations("tools");
 
   return (
     <div className="max-w-6xl mx-auto px-4">
@@ -36,8 +37,8 @@ export default function Home() {
             {cat.tools.map((tool) => (
               <ToolCard
                 key={tool.slug}
-                title={tool.displayName}
-                description={tool.subtitle}
+                title={tTools(`${tool.key}.displayName`)}
+                description={tTools(`${tool.key}.subtitle`)}
                 href={`/${tool.slug}`}
                 icon={tool.icon}
                 color={tool.color}

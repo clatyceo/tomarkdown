@@ -1,4 +1,5 @@
 export interface ToolConfig {
+  key: string;
   slug: string;
   title: string;
   h1: string;
@@ -31,6 +32,7 @@ export const categoryLabels: Record<CategoryName, string> = {
 
 export const tools: Record<string, ToolConfig> = {
   pdf: {
+    key: "pdf",
     slug: "pdf-to-markdown",
     title: "PDF to Markdown — ToMarkdown",
     h1: "Convert PDF to Markdown",
@@ -65,6 +67,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   docx: {
+    key: "docx",
     slug: "docx-to-markdown",
     title: "DOCX to Markdown — ToMarkdown",
     h1: "Convert Word to Markdown",
@@ -99,6 +102,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   youtube: {
+    key: "youtube",
     slug: "youtube-to-markdown",
     title: "YouTube to Markdown — ToMarkdown",
     h1: "Convert YouTube to Markdown",
@@ -133,6 +137,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   pptx: {
+    key: "pptx",
     slug: "pptx-to-markdown",
     title: "PPTX to Markdown — ToMarkdown",
     h1: "Convert PowerPoint to Markdown",
@@ -167,6 +172,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   xlsx: {
+    key: "xlsx",
     slug: "xlsx-to-markdown",
     title: "XLSX to Markdown — ToMarkdown",
     h1: "Convert Excel to Markdown",
@@ -201,6 +207,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   xls: {
+    key: "xls",
     slug: "xls-to-markdown",
     title: "XLS to Markdown — ToMarkdown",
     h1: "Convert XLS to Markdown",
@@ -234,6 +241,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   msg: {
+    key: "msg",
     slug: "msg-to-markdown",
     title: "MSG to Markdown — ToMarkdown",
     h1: "Convert Outlook Email to Markdown",
@@ -267,6 +275,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   html: {
+    key: "html",
     slug: "html-to-markdown",
     title: "HTML to Markdown — ToMarkdown",
     h1: "Convert HTML to Markdown",
@@ -301,6 +310,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   epub: {
+    key: "epub",
     slug: "epub-to-markdown",
     title: "EPUB to Markdown — ToMarkdown",
     h1: "Convert EPUB to Markdown",
@@ -335,6 +345,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   image: {
+    key: "image",
     slug: "image-to-markdown",
     title: "Image to Markdown — ToMarkdown",
     h1: "Convert Image to Markdown",
@@ -369,6 +380,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   csv: {
+    key: "csv",
     slug: "csv-to-markdown",
     title: "CSV to Markdown — ToMarkdown",
     h1: "Convert CSV to Markdown",
@@ -403,6 +415,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   json: {
+    key: "json",
     slug: "json-to-markdown",
     title: "JSON to Markdown — ToMarkdown",
     h1: "Convert JSON to Markdown",
@@ -436,6 +449,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   xml: {
+    key: "xml",
     slug: "xml-to-markdown",
     title: "XML to Markdown — ToMarkdown",
     h1: "Convert XML to Markdown",
@@ -469,6 +483,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   ipynb: {
+    key: "ipynb",
     slug: "ipynb-to-markdown",
     title: "Jupyter to Markdown — ToMarkdown",
     h1: "Convert Jupyter Notebook to Markdown",
@@ -503,6 +518,7 @@ export const tools: Record<string, ToolConfig> = {
     ],
   },
   zip: {
+    key: "zip",
     slug: "zip-to-markdown",
     title: "ZIP to Markdown — ToMarkdown",
     h1: "Convert ZIP to Markdown",

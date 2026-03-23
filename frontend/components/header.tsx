@@ -14,6 +14,7 @@ const categoryKeys: Record<string, string> = {
 export default function Header() {
   const t = useTranslations("nav");
   const tCommon = useTranslations("common");
+  const tTools = useTranslations("tools");
   const [mobileOpen, setMobileOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
@@ -131,7 +132,7 @@ export default function Header() {
                       role="menuitem"
                       onClick={() => setOpenDropdown(null)}
                     >
-                      {tool.displayName}
+                      {tTools(`${tool.key}.displayName`)}
                     </Link>
                   ))}
                 </div>
@@ -171,7 +172,7 @@ export default function Header() {
                   className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
                   onClick={() => setMobileOpen(false)}
                 >
-                  {tool.displayName}
+                  {tTools(`${tool.key}.displayName`)}
                 </Link>
               ))}
             </div>
