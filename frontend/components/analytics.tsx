@@ -2,8 +2,8 @@
 
 import Script from "next/script";
 import { useEffect, useState } from "react";
+import { CONSENT_KEY, CONSENT_CHANGE_EVENT } from "@/lib/consent";
 
-const CONSENT_KEY = "cookie-consent";
 const GA_ID_PATTERN = /^G-[A-Z0-9]+$/;
 
 export function Analytics() {
@@ -24,16 +24,14 @@ export function Analytics() {
       }
     };
 
-    // Listen for consent changes from other tabs
     window.addEventListener("storage", handleStorage);
 
-    // Listen for consent changes within the same tab (custom event)
     const handleConsentChange = () => checkConsent();
-    window.addEventListener("cookie-consent-change", handleConsentChange);
+    window.addEventListener(CONSENT_CHANGE_EVENT, handleConsentChange);
 
     return () => {
       window.removeEventListener("storage", handleStorage);
-      window.removeEventListener("cookie-consent-change", handleConsentChange);
+      window.removeEventListener(CONSENT_CHANGE_EVENT, handleConsentChange);
     };
   }, []);
 

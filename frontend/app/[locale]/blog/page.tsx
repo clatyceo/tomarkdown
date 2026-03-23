@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
-import { getBlogPosts } from "@/lib/blog";
+import { getLocalizedBlogPosts } from "@/lib/blog";
 
 export async function generateMetadata({
   params,
@@ -24,10 +24,7 @@ export default async function BlogIndex({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  let posts = getBlogPosts(locale);
-  if (posts.length === 0 && locale !== "en") {
-    posts = getBlogPosts("en");
-  }
+  const posts = getLocalizedBlogPosts(locale);
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-16">

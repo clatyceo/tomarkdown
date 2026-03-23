@@ -2,8 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-
-const CONSENT_KEY = "cookie-consent";
+import { CONSENT_KEY, CONSENT_CHANGE_EVENT } from "@/lib/consent";
 
 export function CookieConsent() {
   const t = useTranslations("cookies");
@@ -19,13 +18,13 @@ export function CookieConsent() {
   const handleAccept = () => {
     localStorage.setItem(CONSENT_KEY, "accepted");
     setVisible(false);
-    window.dispatchEvent(new Event("cookie-consent-change"));
+    window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT));
   };
 
   const handleDecline = () => {
     localStorage.setItem(CONSENT_KEY, "declined");
     setVisible(false);
-    window.dispatchEvent(new Event("cookie-consent-change"));
+    window.dispatchEvent(new Event(CONSENT_CHANGE_EVENT));
   };
 
   if (!visible) return null;

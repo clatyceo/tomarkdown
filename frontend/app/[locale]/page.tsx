@@ -125,9 +125,7 @@ export default function Home() {
             applicationCategory: "UtilityApplication",
             operatingSystem: "Any",
             offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
-            featureList: Object.values(tools).map(
-              (tool) => `${tool.displayName}`
-            ),
+            featureList: Object.values(tools).map((tool) => tool.displayName),
           }),
         }}
       />

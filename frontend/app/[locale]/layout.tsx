@@ -4,7 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/navigation";
-import { SITE_URL } from "@/lib/config";
+import { SITE_URL, SITE_NAME } from "@/lib/config";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Analytics } from "@/components/analytics";
@@ -34,7 +34,7 @@ export async function generateMetadata({
   return {
     title: t("title"),
     description: t("description"),
-    metadataBase: new URL("https://tomdnow.com"),
+    metadataBase: new URL(SITE_URL),
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -42,7 +42,7 @@ export async function generateMetadata({
     },
     alternates: {
       languages: Object.fromEntries(
-        routing.locales.map((l) => [l, `https://tomdnow.com/${l}`])
+        routing.locales.map((l) => [l, `${SITE_URL}/${l}`])
       ),
     },
   };
@@ -71,7 +71,7 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "Organization",
-              name: "tomdnow",
+              name: SITE_NAME,
               url: SITE_URL,
               description:
                 "Free online tool to convert any file to Markdown",
@@ -84,7 +84,7 @@ export default async function LocaleLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "WebSite",
-              name: "tomdnow",
+              name: SITE_NAME,
               url: SITE_URL,
             }),
           }}

@@ -1,14 +1,18 @@
+import { cache } from "react";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { getTranslations } from "next-intl/server";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from "@/i18n/navigation";
-import { getBlogPost, getAllBlogSlugs } from "@/lib/blog";
+import { getLocalizedBlogPost, getAllBlogSlugs } from "@/lib/blog";
+import { SITE_NAME } from "@/lib/config";
 import { locales } from "@/i18n/config";
 
 type Props = {
   params: Promise<{ locale: string; slug: string }>;
 };
+
+const getCachedPost = cache((locale: string, slug: string) => getLocalizedBlogPost(locale, slug));
 
 export function generateStaticParams() {
   const slugs = getAllBlogSlugs();
@@ -19,14 +23,11 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale, slug } = await params;
-  let post = getBlogPost(locale, slug);
-  if (!post && locale !== "en") {
-    post = getBlogPost("en", slug);
-  }
+  const post = getCachedPost(locale, slug);
   if (!post) return { title: "Not Found" };
 
   return {
-    title: `${post.title} — tomdnow`,
+    title: `${post.title} — ${SITE_NAME}`,
     description: post.description,
   };
 }
@@ -35,10 +36,7 @@ export default async function BlogPostPage({ params }: Props) {
   const { locale, slug } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
 
-  let post = getBlogPost(locale, slug);
-  if (!post && locale !== "en") {
-    post = getBlogPost("en", slug);
-  }
+  const post = getCachedPost(locale, slug);
   if (!post) notFound();
 
   return (
