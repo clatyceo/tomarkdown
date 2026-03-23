@@ -42,9 +42,10 @@ def ocr_image_to_markdown(content: bytes, lang: str = "eng") -> dict:
         lang = "eng"
 
     image = Image.open(io.BytesIO(content))
-    text = pytesseract.image_to_string(image, lang=lang)
+    raw = pytesseract.image_to_string(image, lang=lang)
+    text = str(raw) if raw else ""
 
-    if not text or not text.strip():
+    if not text.strip():
         from errors import ConversionError
         raise ConversionError("No text detected in image. The image may not contain readable text.")
 
