@@ -1,0 +1,38 @@
+{
+  "name": "tomd",
+  "version": "0.1.0",
+  "description": "Convert any file to Markdown from the terminal. Powered by tomdnow.com",
+  "license": "MIT",
+  "bin": {
+    "tomd": "./bin/tomd.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "keywords": [
+    "markdown",
+    "converter",
+    "pdf",
+    "docx",
+    "hwp",
+    "cli"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomdnow/tomd"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
