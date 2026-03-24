@@ -84,9 +84,28 @@ export default async function BlogPostPage({ params }: Props) {
             "@context": "https://schema.org",
             "@type": "BlogPosting",
             headline: post.title,
-            datePublished: post.date,
-            author: { "@type": "Person", name: post.author },
             description: post.description,
+            datePublished: post.date,
+            dateModified: post.date,
+            author: {
+              "@type": "Person",
+              name: post.author,
+              url: `${SITE_URL}/en/about`,
+            },
+            publisher: {
+              "@type": "Organization",
+              name: SITE_NAME,
+              url: SITE_URL,
+              logo: {
+                "@type": "ImageObject",
+                url: `${SITE_URL}/icon.svg`,
+              },
+            },
+            image: `${SITE_URL}/og-image.png`,
+            mainEntityOfPage: {
+              "@type": "WebPage",
+              "@id": `${SITE_URL}/${locale}/blog/${slug}`,
+            },
           }),
         }}
       />
