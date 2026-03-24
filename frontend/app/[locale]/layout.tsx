@@ -8,6 +8,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/config";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Analytics } from "@/components/analytics";
+import { NaverAnalytics } from "@/components/naver-analytics";
 import { AdSenseScript } from "@/components/adsense-script";
 import { CookieConsent } from "@/components/cookie-consent";
 import { ServiceWorkerRegister } from "@/components/sw-register";
@@ -76,6 +77,13 @@ export async function generateMetadata({
         routing.locales.map((l) => [l, `${SITE_URL}/${l}`])
       ),
     },
+    verification: {
+      google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
+      other: {
+        "naver-site-verification":
+          process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
+      },
+    },
   };
 }
 
@@ -127,6 +135,7 @@ export default async function LocaleLayout({
           <CookieConsent />
         </NextIntlClientProvider>
         <Analytics />
+        <NaverAnalytics />
         <AdSenseScript />
         <ServiceWorkerRegister />
       </body>
