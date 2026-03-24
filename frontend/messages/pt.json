@@ -39,7 +39,8 @@
     "security": "Segurança",
     "blog": "Blog",
     "api": "API",
-    "pricing": "Precos"
+    "pricing": "Precos",
+    "dashboard": "Painel"
   },
   "blog": {
     "title": "Blog — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "Funcoes IA (em breve)",
     "feature_prioritySupport": "Suporte prioritario",
     "feature_sla": "SLA 99.9%"
+  },
+  "dashboard": {
+    "title": "Painel — tomdnow",
+    "h1": "Painel",
+    "signIn": "Entrar",
+    "signInDesc": "Digite seu email para receber um link magico",
+    "sendMagicLink": "Enviar link magico",
+    "magicLinkSent": "Verifique seu email para o link magico!",
+    "email": "Email",
+    "apiKey": "Chave API",
+    "copyKey": "Copiar",
+    "regenerateKey": "Regenerar chave",
+    "regenerateConfirm": "Isso invalidara sua chave atual. Continuar?",
+    "usage": "Uso de hoje",
+    "tier": "Plano",
+    "upgradeToPro": "Atualizar para Pro",
+    "signOut": "Sair",
+    "noAccount": "Ainda nao tem chave API? Entre para criar uma automaticamente."
   }
 }

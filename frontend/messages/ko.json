@@ -39,7 +39,8 @@
     "security": "보안",
     "blog": "블로그",
     "api": "API",
-    "pricing": "요금제"
+    "pricing": "요금제",
+    "dashboard": "대시보드"
   },
   "blog": {
     "title": "블로그 — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "AI 기능 (출시 예정)",
     "feature_prioritySupport": "우선 지원",
     "feature_sla": "99.9% SLA"
+  },
+  "dashboard": {
+    "title": "대시보드 — tomdnow",
+    "h1": "대시보드",
+    "signIn": "로그인",
+    "signInDesc": "이메일을 입력하면 매직 링크를 보내드립니다",
+    "sendMagicLink": "매직 링크 보내기",
+    "magicLinkSent": "이메일에서 매직 링크를 확인하세요!",
+    "email": "이메일",
+    "apiKey": "API 키",
+    "copyKey": "복사",
+    "regenerateKey": "키 재생성",
+    "regenerateConfirm": "현재 키가 무효화됩니다. 계속하시겠습니까?",
+    "usage": "오늘 사용량",
+    "tier": "요금제",
+    "upgradeToPro": "Pro로 업그레이드",
+    "signOut": "로그아웃",
+    "noAccount": "API 키가 아직 없나요? 로그인하면 자동으로 생성됩니다."
   }
 }

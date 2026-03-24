@@ -106,5 +106,40 @@ def upgrade_tier(email: str, tier: str) -> bool:
     return success
 
 
+def get_user_by_email(email: str) -> dict | None:
+    """Get user info by email, including API key stats."""
+    conn = _get_conn()
+    row = conn.execute(
+        "SELECT email, tier, daily_limit, daily_used, last_reset, created_at FROM api_keys WHERE email = ?",
+        (email,),
+    ).fetchone()
+    conn.close()
+
+    if not row:
+        return None
+
+    return {
+        "email": row["email"],
+        "tier": row["tier"],
+        "daily_limit": row["daily_limit"],
+        "daily_used": row["daily_used"],
+        "created_at": row["created_at"],
+    }
+
+
+def regenerate_api_key(email: str) -> str:
+    """Delete old key and create a new one for the given email."""
+    conn = _get_conn()
+    # Get existing tier
+    row = conn.execute("SELECT tier FROM api_keys WHERE email = ?", (email,)).fetchone()
+    tier = row["tier"] if row else "free"
+    # Delete old key
+    conn.execute("DELETE FROM api_keys WHERE email = ?", (email,))
+    conn.commit()
+    conn.close()
+    # Create new key
+    return create_api_key(email, tier)
+
+
 # Initialize DB on module import
 init_db()

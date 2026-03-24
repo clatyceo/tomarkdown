@@ -39,7 +39,8 @@
     "security": "セキュリティ",
     "blog": "ブログ",
     "api": "API",
-    "pricing": "料金プラン"
+    "pricing": "料金プラン",
+    "dashboard": "ダッシュボード"
   },
   "blog": {
     "title": "ブログ — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "AI機能（近日公開）",
     "feature_prioritySupport": "優先サポート",
     "feature_sla": "99.9% SLA"
+  },
+  "dashboard": {
+    "title": "ダッシュボード — tomdnow",
+    "h1": "ダッシュボード",
+    "signIn": "ログイン",
+    "signInDesc": "メールアドレスを入力してマジックリンクを受け取る",
+    "sendMagicLink": "マジックリンクを送信",
+    "magicLinkSent": "メールでマジックリンクをご確認ください!",
+    "email": "メール",
+    "apiKey": "APIキー",
+    "copyKey": "コピー",
+    "regenerateKey": "キーを再生成",
+    "regenerateConfirm": "現在のキーが無効になります。続行しますか?",
+    "usage": "本日の使用量",
+    "tier": "プラン",
+    "upgradeToPro": "Proにアップグレード",
+    "signOut": "ログアウト",
+    "noAccount": "APIキーがまだありませんか?ログインすると自動的に作成されます。"
   }
 }

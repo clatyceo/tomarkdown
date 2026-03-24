@@ -39,7 +39,8 @@
     "security": "Seguridad",
     "blog": "Blog",
     "api": "API",
-    "pricing": "Precios"
+    "pricing": "Precios",
+    "dashboard": "Panel"
   },
   "blog": {
     "title": "Blog — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "Funciones IA (proximamente)",
     "feature_prioritySupport": "Soporte prioritario",
     "feature_sla": "SLA 99.9%"
+  },
+  "dashboard": {
+    "title": "Panel — tomdnow",
+    "h1": "Panel",
+    "signIn": "Iniciar sesion",
+    "signInDesc": "Ingrese su correo para recibir un enlace magico",
+    "sendMagicLink": "Enviar enlace magico",
+    "magicLinkSent": "Revise su correo para el enlace magico!",
+    "email": "Correo electronico",
+    "apiKey": "Clave API",
+    "copyKey": "Copiar",
+    "regenerateKey": "Regenerar clave",
+    "regenerateConfirm": "Esto invalidara su clave actual. Continuar?",
+    "usage": "Uso de hoy",
+    "tier": "Plan",
+    "upgradeToPro": "Actualizar a Pro",
+    "signOut": "Cerrar sesion",
+    "noAccount": "No tiene clave API? Inicie sesion para crear una automaticamente."
   }
 }

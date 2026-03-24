@@ -39,7 +39,8 @@
     "security": "Security",
     "blog": "Blog",
     "api": "API",
-    "pricing": "Pricing"
+    "pricing": "Pricing",
+    "dashboard": "Dashboard"
   },
   "blog": {
     "title": "Blog — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "AI features (coming soon)",
     "feature_prioritySupport": "Priority support",
     "feature_sla": "99.9% SLA"
+  },
+  "dashboard": {
+    "title": "Dashboard — tomdnow",
+    "h1": "Dashboard",
+    "signIn": "Sign In",
+    "signInDesc": "Enter your email to receive a magic link",
+    "sendMagicLink": "Send Magic Link",
+    "magicLinkSent": "Check your email for the magic link!",
+    "email": "Email",
+    "apiKey": "API Key",
+    "copyKey": "Copy",
+    "regenerateKey": "Regenerate Key",
+    "regenerateConfirm": "This will invalidate your current key. Continue?",
+    "usage": "Usage Today",
+    "tier": "Plan",
+    "upgradeToPro": "Upgrade to Pro",
+    "signOut": "Sign Out",
+    "noAccount": "No API key yet? Sign in to create one automatically."
   }
 }

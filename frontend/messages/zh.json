@@ -39,7 +39,8 @@
     "security": "安全",
     "blog": "博客",
     "api": "API",
-    "pricing": "定价"
+    "pricing": "定价",
+    "dashboard": "控制台"
   },
   "blog": {
     "title": "博客 — tomdnow",
@@ -702,5 +703,23 @@
     "feature_aiFeatures": "AI功能（即将推出）",
     "feature_prioritySupport": "优先支持",
     "feature_sla": "99.9% SLA"
+  },
+  "dashboard": {
+    "title": "控制台 — tomdnow",
+    "h1": "控制台",
+    "signIn": "登录",
+    "signInDesc": "输入您的邮箱以接收魔法链接",
+    "sendMagicLink": "发送魔法链接",
+    "magicLinkSent": "请检查您的邮箱中的魔法链接!",
+    "email": "邮箱",
+    "apiKey": "API密钥",
+    "copyKey": "复制",
+    "regenerateKey": "重新生成密钥",
+    "regenerateConfirm": "这将使您当前的密钥失效。是否继续?",
+    "usage": "今日用量",
+    "tier": "方案",
+    "upgradeToPro": "升级到Pro",
+    "signOut": "退出登录",
+    "noAccount": "还没有API密钥?登录后将自动创建。"
   }
 }
