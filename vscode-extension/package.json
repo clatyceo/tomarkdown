@@ -1,0 +1,76 @@
+{
+  "name": "tomdnow",
+  "displayName": "tomdnow -- File to Markdown",
+  "description": "Convert any file to Markdown directly from VS Code. Supports PDF, DOCX, HWP, Excel, and 20+ formats.",
+  "version": "0.1.0",
+  "publisher": "tomdnow",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Other",
+    "Formatters"
+  ],
+  "keywords": [
+    "markdown",
+    "converter",
+    "pdf",
+    "docx",
+    "hwp"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tomdnow/tomdnow"
+  },
+  "icon": "icon.png",
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "tomdnow.convertFile",
+        "title": "Convert to Markdown",
+        "category": "tomdnow"
+      },
+      {
+        "command": "tomdnow.convertCurrentFile",
+        "title": "Convert Current File to Markdown",
+        "category": "tomdnow"
+      }
+    ],
+    "configuration": {
+      "title": "tomdnow",
+      "properties": {
+        "tomdnow.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "Your tomdnow API key. Get one at https://tomdnow.com/dashboard"
+        },
+        "tomdnow.apiUrl": {
+          "type": "string",
+          "default": "https://tomdnow.com/api/v1",
+          "description": "API base URL (change for self-hosted instances)"
+        }
+      }
+    },
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "tomdnow.convertFile",
+          "group": "navigation",
+          "when": "resourceExtname =~ /\\.(pdf|docx|pptx|xlsx|xls|hwp|hwpx|rtf|txt|html|epub|csv|json|xml|msg|ipynb)$/i"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.85.0",
+    "@types/node": "^20",
+    "typescript": "^5"
+  }
+}
