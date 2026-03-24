@@ -82,6 +82,7 @@ export async function generateMetadata({
       other: {
         "naver-site-verification":
           process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "af8e8f101e535050dc50619a9b6216dec0a8d5e6",
+        "google-adsense-account": "ca-pub-9136783850079430",
       },
     },
   };
