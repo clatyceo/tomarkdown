@@ -623,10 +623,23 @@
   "about": {
     "title": "About tomdnow",
     "metaTitle": "About — tomdnow",
-    "metaDescription": "Learn about tomdnow, a free tool to convert any file to Markdown.",
-    "p1": "tomdnow is a free online tool that converts various file formats into clean, readable Markdown.",
-    "p2": "Whether you need to convert a PDF report, a Word document, or a YouTube video transcript, tomdnow makes it simple — no sign-up required.",
-    "p3": "Powered by Microsoft's open-source MarkItDown engine, tomdnow delivers accurate conversions that preserve your document structure."
+    "metaDescription": "Learn about tomdnow, the free file-to-Markdown converter built by Park Gamsa. Privacy-first, open-source powered.",
+    "heroSubtitle": "A free, privacy-first tool to convert any file to Markdown",
+    "storyTitle": "Our Story",
+    "storyP1": "tomdnow was created by Park Gamsa, a developer based in South Korea, to solve a simple but persistent problem: converting files to Markdown shouldn't require sign-ups, subscriptions, or trusting a third party with your data.",
+    "storyP2": "What started as a personal tool for converting Korean government documents (HWP/HWPX) into Markdown for AI processing quickly grew into a full-featured converter supporting 20+ file formats.",
+    "techTitle": "How It Works",
+    "techP1": "tomdnow is powered by Microsoft's open-source MarkItDown engine, which means your conversions benefit from enterprise-grade parsing without the enterprise price tag.",
+    "techP2": "Every file is processed entirely in memory. Nothing is written to disk, nothing is stored in a database, and nothing persists after your browser tab closes. The conversion happens, you get your Markdown, and the data is gone.",
+    "privacyTitle": "Privacy by Design",
+    "privacyP1": "We believe privacy isn't a feature — it's a foundation. tomdnow was built from day one with a zero-storage architecture. Your files never touch a permanent storage layer.",
+    "privacyP2": "All transfers are encrypted with TLS 1.3, and the conversion backend runs in isolated containers that are recycled regularly.",
+    "missionTitle": "Our Mission",
+    "missionP1": "Markdown is the universal language of documentation, note-taking, and AI. We want to make it effortless to get any document into Markdown — whether you're a developer, researcher, student, or office worker.",
+    "missionP2": "tomdnow will always have a free tier. We believe essential document conversion should be accessible to everyone.",
+    "founderTitle": "About the Founder",
+    "founderName": "Park Gamsa",
+    "founderBio": "Software developer based in South Korea, specializing in web applications and document processing tools. Created tomdnow to bridge the gap between proprietary document formats and the open Markdown ecosystem."
   },
   "privacy": {
     "title": "Privacy Policy",

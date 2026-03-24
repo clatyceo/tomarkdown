@@ -621,12 +621,25 @@
     }
   },
   "about": {
-    "title": "关于 tomdnow",
+    "title": "关于tomdnow",
     "metaTitle": "关于 — tomdnow",
-    "metaDescription": "了解 tomdnow，一款免费的文件转 Markdown 在线工具。",
-    "p1": "tomdnow 是一款免费的在线工具，可将各种文件格式转换为简洁、易读的 Markdown。",
-    "p2": "无论您需要转换 PDF 报告、Word 文档还是 YouTube 视频字幕，tomdnow 都能轻松完成 — 无需注册。",
-    "p3": "基于微软开源的 MarkItDown 引擎，tomdnow 提供精准的转换结果，完整保留您的文档结构。"
+    "metaDescription": "了解由Park Gamsa创建的免费文件转Markdown工具tomdnow。隐私优先，开源驱动。",
+    "heroSubtitle": "一款免费、隐私优先的文件转Markdown工具",
+    "storyTitle": "我们的故事",
+    "storyP1": "tomdnow由韩国开发者朴监查（박감사）创建，旨在解决一个简单但持久的问题：将文件转换为Markdown不应需要注册、订阅或将数据委托给第三方。",
+    "storyP2": "最初作为将韩国政府文件（HWP/HWPX）转换为AI处理用Markdown的个人工具，现已发展成支持20多种文件格式的全功能转换器。",
+    "techTitle": "工作原理",
+    "techP1": "tomdnow由Microsoft的开源MarkItDown引擎驱动，这意味着您的转换受益于企业级解析，无需企业价格。",
+    "techP2": "每个文件完全在内存中处理。不写入磁盘，不存储在数据库中，关闭浏览器标签后什么都不会保留。",
+    "privacyTitle": "隐私设计",
+    "privacyP1": "我们认为隐私不是功能——而是基础。tomdnow从第一天起就采用零存储架构构建。您的文件从不接触永久存储层。",
+    "privacyP2": "所有传输均使用TLS 1.3加密，转换后端在定期回收的隔离容器中运行。",
+    "missionTitle": "我们的使命",
+    "missionP1": "Markdown是文档、笔记和AI的通用语言。我们希望无论您是开发者、研究人员、学生还是上班族，都能轻松将任何文档转换为Markdown。",
+    "missionP2": "tomdnow将始终提供免费层。我们相信基本的文档转换应该对所有人开放。",
+    "founderTitle": "关于创始人",
+    "founderName": "朴监查（박감사）",
+    "founderBio": "韩国软件开发者，专注于Web应用和文档处理工具。创建tomdnow旨在弥合专有文档格式与开放Markdown生态系统之间的差距。"
   },
   "privacy": {
     "title": "隐私政策",
