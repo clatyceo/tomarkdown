@@ -146,5 +146,8 @@ def regenerate_api_key(email: str) -> str:
     return new_key
 
 
-# Initialize DB on module import
-init_db()
+# Initialize DB on first use, not on import
+try:
+    init_db()
+except Exception as e:
+    logger.warning("Failed to initialize API keys DB: %s", e)

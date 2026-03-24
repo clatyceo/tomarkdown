@@ -19,11 +19,8 @@ export function Analytics() {
     checkConsent();
 
     const handleStorage = (e: StorageEvent) => {
-      if (e.key === CONSENT_KEY) {
-        checkConsent();
-      }
+      if (e.key === CONSENT_KEY) checkConsent();
     };
-
     window.addEventListener("storage", handleStorage);
 
     const handleConsentChange = () => checkConsent();
@@ -35,7 +32,7 @@ export function Analytics() {
     };
   }, []);
 
-  if (!gaId || !GA_ID_PATTERN.test(gaId) || !hasConsent) return null;
+  if (!gaId || !GA_ID_PATTERN.test(gaId)) return null;
 
   return (
     <>
@@ -46,6 +43,7 @@ export function Analytics() {
       <Script id="ga4-config" strategy="afterInteractive">
         {`window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
+          gtag('consent', 'default', { analytics_storage: '${hasConsent ? "granted" : "denied"}' });
           gtag('js', new Date());
           gtag('config', '${gaId}');`}
       </Script>
