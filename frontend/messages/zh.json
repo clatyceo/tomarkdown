@@ -742,5 +742,10 @@
     "viewApi": "查看API文档",
     "seePricing": "查看定价",
     "madeIn": "韩国制造"
+  },
+  "offline": {
+    "title": "您已离线",
+    "message": "tomdnow需要互联网连接才能转换文件。",
+    "retry": "请检查网络连接后重试。"
   }
 }

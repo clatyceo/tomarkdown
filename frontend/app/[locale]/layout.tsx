@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Sora, Instrument_Serif } from "next/font/google";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, getTranslations } from "next-intl/server";
@@ -10,6 +10,7 @@ import Footer from "@/components/footer";
 import { Analytics } from "@/components/analytics";
 import { AdSenseScript } from "@/components/adsense-script";
 import { CookieConsent } from "@/components/cookie-consent";
+import { ServiceWorkerRegister } from "@/components/sw-register";
 import "./globals.css";
 
 const sora = Sora({
@@ -25,6 +26,10 @@ const instrumentSerif = Instrument_Serif({
   display: "swap",
 });
 
+export const viewport: Viewport = {
+  themeColor: "#2563eb",
+};
+
 export async function generateMetadata({
   params,
 }: {
@@ -36,6 +41,15 @@ export async function generateMetadata({
     title: t("title"),
     description: t("description"),
     metadataBase: new URL(SITE_URL),
+    manifest: "/manifest.webmanifest",
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: "default",
+      title: SITE_NAME,
+    },
+    icons: {
+      apple: "/icon.svg",
+    },
     openGraph: {
       title: t("title"),
       description: t("description"),
@@ -114,6 +128,7 @@ export default async function LocaleLayout({
         </NextIntlClientProvider>
         <Analytics />
         <AdSenseScript />
+        <ServiceWorkerRegister />
       </body>
     </html>
   );

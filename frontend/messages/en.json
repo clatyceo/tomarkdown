@@ -742,5 +742,10 @@
     "viewApi": "View API Docs",
     "seePricing": "See Pricing",
     "madeIn": "Made with love in Korea"
+  },
+  "offline": {
+    "title": "You're Offline",
+    "message": "tomdnow requires an internet connection to convert files.",
+    "retry": "Check your connection and try again."
   }
 }

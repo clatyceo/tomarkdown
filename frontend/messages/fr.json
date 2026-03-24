@@ -742,5 +742,10 @@
     "viewApi": "Voir la documentation API",
     "seePricing": "Voir les tarifs",
     "madeIn": "Fait avec amour en Coree"
+  },
+  "offline": {
+    "title": "Vous etes hors ligne",
+    "message": "tomdnow necessite une connexion internet pour convertir des fichiers.",
+    "retry": "Verifiez votre connexion et reessayez."
   }
 }
