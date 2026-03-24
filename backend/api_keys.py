@@ -90,5 +90,21 @@ def validate_api_key(key: str) -> dict | None:
     }
 
 
+def upgrade_tier(email: str, tier: str) -> bool:
+    """Upgrade (or downgrade) an API key tier for the given email."""
+    daily_limit = 500 if tier == "pro" else 50
+    conn = _get_conn()
+    cursor = conn.execute(
+        "UPDATE api_keys SET tier = ?, daily_limit = ? WHERE email = ?",
+        (tier, daily_limit, email),
+    )
+    conn.commit()
+    success = cursor.rowcount > 0
+    conn.close()
+    if success:
+        logger.info("Upgraded email=%s to tier=%s", email, tier)
+    return success
+
+
 # Initialize DB on module import
 init_db()

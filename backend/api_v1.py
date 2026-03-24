@@ -2,7 +2,7 @@ import asyncio
 import logging
 from fastapi import APIRouter, File, UploadFile, Header, HTTPException
 from converter import convert_file
-from api_keys import validate_api_key, create_api_key
+from api_keys import validate_api_key, create_api_key, upgrade_tier
 from config import CONVERSION_TIMEOUT
 from errors import ConversionTimeoutError
 
@@ -48,3 +48,18 @@ async def create_key(email: str = Header(...)):
     """Create a new API key for the given email."""
     key = create_api_key(email)
     return {"api_key": key, "tier": "free", "daily_limit": 50}
+
+
+@router.post("/keys/upgrade")
+async def upgrade_key(body: dict):
+    """Upgrade a user's API key tier. Called by Stripe webhook."""
+    email = body.get("email")
+    tier = body.get("tier", "pro")
+    if not email:
+        raise HTTPException(status_code=400, detail="Email required")
+
+    success = upgrade_tier(email, tier)
+    if not success:
+        raise HTTPException(status_code=404, detail="No API key found for this email")
+
+    return {"status": "upgraded", "email": email, "tier": tier}

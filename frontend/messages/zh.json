@@ -38,7 +38,8 @@
     "terms": "使用条款",
     "security": "安全",
     "blog": "博客",
-    "api": "API"
+    "api": "API",
+    "pricing": "定价"
   },
   "blog": {
     "title": "博客 — tomdnow",
@@ -674,5 +675,32 @@
     "authHeaderDesc": "在每个请求的 X-Api-Key 标头中包含您的 API 密钥。",
     "supportedFormats": "支持的格式",
     "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
+  },
+  "pricing": {
+    "title": "定价 — tomdnow",
+    "h1": "简单透明的定价",
+    "subtitle": "免费开始，按需升级",
+    "free": "免费",
+    "pro": "专业版",
+    "team": "团队版",
+    "month": "/月",
+    "perUser": "/用户",
+    "mostPopular": "最受欢迎",
+    "getStarted": "免费开始",
+    "subscribePro": "订阅专业版",
+    "contactUs": "联系我们",
+    "feature_singleFile": "单文件转换",
+    "feature_dailyLimit20": "每天20次转换",
+    "feature_basicFormats": "所有基本格式",
+    "feature_ads": "包含广告",
+    "feature_batch50": "批量转换最多50个文件",
+    "feature_api500": "API：每天500次请求",
+    "feature_noAds": "无广告",
+    "feature_ocr": "OCR文字提取",
+    "feature_allFormats": "包含HWP在内的所有格式",
+    "feature_unlimitedApi": "无限API",
+    "feature_aiFeatures": "AI功能（即将推出）",
+    "feature_prioritySupport": "优先支持",
+    "feature_sla": "99.9% SLA"
   }
 }

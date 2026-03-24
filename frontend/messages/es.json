@@ -38,7 +38,8 @@
     "terms": "Términos",
     "security": "Seguridad",
     "blog": "Blog",
-    "api": "API"
+    "api": "API",
+    "pricing": "Precios"
   },
   "blog": {
     "title": "Blog — tomdnow",
@@ -674,5 +675,32 @@
     "authHeaderDesc": "Incluya su clave API en el encabezado X-Api-Key en cada solicitud.",
     "supportedFormats": "Formatos compatibles",
     "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
+  },
+  "pricing": {
+    "title": "Precios — tomdnow",
+    "h1": "Precios simples y transparentes",
+    "subtitle": "Empieza gratis, actualiza cuando necesites mas",
+    "free": "Gratis",
+    "pro": "Pro",
+    "team": "Equipo",
+    "month": "/mes",
+    "perUser": "/usuario",
+    "mostPopular": "Mas popular",
+    "getStarted": "Empezar gratis",
+    "subscribePro": "Suscribirse a Pro",
+    "contactUs": "Contactenos",
+    "feature_singleFile": "Conversion de archivo unico",
+    "feature_dailyLimit20": "20 conversiones/dia",
+    "feature_basicFormats": "Todos los formatos basicos",
+    "feature_ads": "Con publicidad",
+    "feature_batch50": "Lote de hasta 50 archivos",
+    "feature_api500": "API: 500 solicitudes/dia",
+    "feature_noAds": "Sin publicidad",
+    "feature_ocr": "Extraccion de texto OCR",
+    "feature_allFormats": "Todos los formatos incluido HWP",
+    "feature_unlimitedApi": "API ilimitada",
+    "feature_aiFeatures": "Funciones IA (proximamente)",
+    "feature_prioritySupport": "Soporte prioritario",
+    "feature_sla": "SLA 99.9%"
   }
 }

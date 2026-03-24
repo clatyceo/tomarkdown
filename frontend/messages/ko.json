@@ -38,7 +38,8 @@
     "terms": "이용약관",
     "security": "보안",
     "blog": "블로그",
-    "api": "API"
+    "api": "API",
+    "pricing": "요금제"
   },
   "blog": {
     "title": "블로그 — tomdnow",
@@ -674,5 +675,32 @@
     "authHeaderDesc": "모든 요청에 X-Api-Key 헤더에 API 키를 포함하세요.",
     "supportedFormats": "지원 형식",
     "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
+  },
+  "pricing": {
+    "title": "요금제 — tomdnow",
+    "h1": "심플하고 투명한 요금제",
+    "subtitle": "무료로 시작하고, 필요할 때 업그레이드하세요",
+    "free": "무료",
+    "pro": "프로",
+    "team": "팀",
+    "month": "/월",
+    "perUser": "/사용자",
+    "mostPopular": "가장 인기",
+    "getStarted": "무료로 시작하기",
+    "subscribePro": "프로 구독하기",
+    "contactUs": "문의하기",
+    "feature_singleFile": "단일 파일 변환",
+    "feature_dailyLimit20": "일 20회 변환",
+    "feature_basicFormats": "기본 형식 지원",
+    "feature_ads": "광고 포함",
+    "feature_batch50": "최대 50개 파일 일괄 변환",
+    "feature_api500": "API: 일 500회 요청",
+    "feature_noAds": "광고 없음",
+    "feature_ocr": "OCR 텍스트 추출",
+    "feature_allFormats": "HWP 포함 모든 형식",
+    "feature_unlimitedApi": "무제한 API",
+    "feature_aiFeatures": "AI 기능 (출시 예정)",
+    "feature_prioritySupport": "우선 지원",
+    "feature_sla": "99.9% SLA"
   }
 }

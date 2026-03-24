@@ -38,7 +38,8 @@
     "terms": "利用規約",
     "security": "セキュリティ",
     "blog": "ブログ",
-    "api": "API"
+    "api": "API",
+    "pricing": "料金プラン"
   },
   "blog": {
     "title": "ブログ — tomdnow",
@@ -674,5 +675,32 @@
     "authHeaderDesc": "すべてのリクエストにX-Api-Keyヘッダーを含めてください。",
     "supportedFormats": "対応フォーマット",
     "supportedFormatsDesc": "PDF, DOCX, PPTX, XLSX, XLS, HTML, EPUB, CSV, JSON, XML, MSG, IPYNB, ZIP, HWP, HWPX, RTF, TXT, JPG, PNG, GIF, WebP"
+  },
+  "pricing": {
+    "title": "料金プラン — tomdnow",
+    "h1": "シンプルで透明な料金プラン",
+    "subtitle": "無料で始めて、必要に応じてアップグレード",
+    "free": "無料",
+    "pro": "プロ",
+    "team": "チーム",
+    "month": "/月",
+    "perUser": "/ユーザー",
+    "mostPopular": "人気No.1",
+    "getStarted": "無料で始める",
+    "subscribePro": "プロに登録",
+    "contactUs": "お問い合わせ",
+    "feature_singleFile": "単一ファイル変換",
+    "feature_dailyLimit20": "1日20回の変換",
+    "feature_basicFormats": "基本フォーマット対応",
+    "feature_ads": "広告あり",
+    "feature_batch50": "最大50ファイルの一括変換",
+    "feature_api500": "API: 1日500リクエスト",
+    "feature_noAds": "広告なし",
+    "feature_ocr": "OCRテキスト抽出",
+    "feature_allFormats": "HWP含む全フォーマット",
+    "feature_unlimitedApi": "無制限API",
+    "feature_aiFeatures": "AI機能（近日公開）",
+    "feature_prioritySupport": "優先サポート",
+    "feature_sla": "99.9% SLA"
   }
 }

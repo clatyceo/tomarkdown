@@ -140,6 +140,12 @@ export default function Header() {
             </div>
           ))}
           <Link
+            href="/pricing"
+            className="px-3 py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
+          >
+            {t("pricing")}
+          </Link>
+          <Link
             href="/blog"
             className="px-3 py-2 text-sm text-gray-600 hover:text-gray-900 transition-colors"
           >
@@ -190,6 +196,13 @@ export default function Header() {
             </div>
           ))}
           <div className="border-t border-gray-100">
+            <Link
+              href="/pricing"
+              className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
+              onClick={() => setMobileOpen(false)}
+            >
+              {t("pricing")}
+            </Link>
             <Link
               href="/blog"
               className="block px-6 py-2 text-sm text-gray-600 hover:bg-gray-50"
