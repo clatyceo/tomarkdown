@@ -721,5 +721,26 @@
     "upgradeToPro": "Proにアップグレード",
     "signOut": "ログアウト",
     "noAccount": "APIキーがまだありませんか?ログインすると自動的に作成されます。"
+  },
+  "launch": {
+    "title": "tomdnow — あらゆるファイルをマークダウンに変換",
+    "hero": "あらゆるファイルをマークダウンに変換",
+    "heroSub": "無料、高速、プライベート",
+    "stat1": "21以上のフォーマット",
+    "stat2": "8言語対応",
+    "stat3": "100%無料",
+    "stat4": "登録不要",
+    "privacyTitle": "プライバシー最優先",
+    "privacyDesc": "ファイルはメモリ内で処理され、サーバーに保存されることはありません",
+    "formatsTitle": "幅広いフォーマット対応",
+    "formatsDesc": "PDF、Word、Excel、PowerPoint、HWPなど15以上のフォーマットに対応",
+    "apiTitle": "開発者API",
+    "apiDesc": "自動化のためのREST API、1日50リクエスト無料",
+    "freeTitle": "オープン＆無料",
+    "freeDesc": "基本的な変換機能は常に無料、登録不要です",
+    "tryNow": "今すぐ試す — 無料",
+    "viewApi": "APIドキュメント",
+    "seePricing": "料金プラン",
+    "madeIn": "韓国で作られました"
   }
 }

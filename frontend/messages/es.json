@@ -721,5 +721,26 @@
     "upgradeToPro": "Actualizar a Pro",
     "signOut": "Cerrar sesion",
     "noAccount": "No tiene clave API? Inicie sesion para crear una automaticamente."
+  },
+  "launch": {
+    "title": "tomdnow — Convierte cualquier archivo a Markdown",
+    "hero": "Convierte cualquier archivo a Markdown",
+    "heroSub": "Gratis, rapido y privado",
+    "stat1": "21+ formatos",
+    "stat2": "8 idiomas",
+    "stat3": "100% gratis",
+    "stat4": "Sin registro",
+    "privacyTitle": "Privacidad primero",
+    "privacyDesc": "Tus archivos se procesan en memoria y nunca se almacenan en nuestros servidores",
+    "formatsTitle": "Soporte universal de formatos",
+    "formatsDesc": "PDF, Word, Excel, PowerPoint, HWP y mas de 15 formatos",
+    "apiTitle": "API para desarrolladores",
+    "apiDesc": "API REST con 50 solicitudes gratuitas por dia para automatizacion",
+    "freeTitle": "Abierto y gratuito",
+    "freeDesc": "Las funciones principales de conversion son siempre gratuitas, sin registro",
+    "tryNow": "Prueba ahora — Es gratis",
+    "viewApi": "Ver documentacion API",
+    "seePricing": "Ver precios",
+    "madeIn": "Hecho con amor en Corea"
   }
 }

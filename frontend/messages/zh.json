@@ -721,5 +721,26 @@
     "upgradeToPro": "升级到Pro",
     "signOut": "退出登录",
     "noAccount": "还没有API密钥?登录后将自动创建。"
+  },
+  "launch": {
+    "title": "tomdnow — 将任何文件转换为Markdown",
+    "hero": "将任何文件转换为Markdown",
+    "heroSub": "免费、快速、隐私保护",
+    "stat1": "21+格式",
+    "stat2": "8种语言",
+    "stat3": "100%免费",
+    "stat4": "无需注册",
+    "privacyTitle": "隐私优先",
+    "privacyDesc": "文件在内存中处理,绝不会存储在我们的服务器上",
+    "formatsTitle": "全面格式支持",
+    "formatsDesc": "支持PDF、Word、Excel、PowerPoint、HWP等15+种格式",
+    "apiTitle": "开发者API",
+    "apiDesc": "用于自动化的REST API,每天50次免费请求",
+    "freeTitle": "开放且免费",
+    "freeDesc": "核心转换功能始终免费,无需注册",
+    "tryNow": "立即试用 — 免费",
+    "viewApi": "查看API文档",
+    "seePricing": "查看定价",
+    "madeIn": "韩国制造"
   }
 }

@@ -20,6 +20,7 @@ export default function Footer() {
             <Link href="/security" className="text-sm text-gray-600 hover:text-gray-700 hover:underline">{t("nav.security")}</Link>
             <Link href="/privacy" className="text-sm text-gray-600 hover:text-gray-700 hover:underline">{t("nav.privacy")}</Link>
             <Link href="/terms" className="text-sm text-gray-600 hover:text-gray-700 hover:underline">{t("nav.terms")}</Link>
+            <Link href="/launch" className="text-sm text-gray-600 hover:text-gray-700 hover:underline">Product Hunt</Link>
           </div>
         </div>
       </div>

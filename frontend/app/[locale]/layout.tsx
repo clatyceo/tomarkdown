@@ -39,7 +39,23 @@ export async function generateMetadata({
     openGraph: {
       title: t("title"),
       description: t("description"),
+      url: SITE_URL,
+      siteName: SITE_NAME,
+      images: [
+        {
+          url: `${SITE_URL}/og-image.svg`,
+          width: 1200,
+          height: 630,
+          alt: SITE_NAME,
+        },
+      ],
       type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("description"),
+      images: [`${SITE_URL}/og-image.svg`],
     },
     alternates: {
       languages: Object.fromEntries(
