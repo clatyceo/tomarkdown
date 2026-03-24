@@ -8,6 +8,7 @@ import FileUploader from "./file-uploader";
 import UrlInput from "./url-input";
 import MarkdownPreview from "./markdown-preview";
 import DownloadButton from "./download-button";
+import { AdUnit } from "./ad-unit";
 
 export function sanitizeFilename(title: string, fallback: string): string {
   if (!title) return fallback;
@@ -149,6 +150,7 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
         <div className="mt-8 space-y-4">
           <MarkdownPreview markdown={markdown} title={title} />
           <DownloadButton markdown={markdown} filename={sanitizeFilename(title, tool.type)} />
+          <AdUnit slot="result-bottom" format="horizontal" />
         </div>
       )}
 
@@ -200,6 +202,7 @@ export default function ConverterPage({ tool }: { tool: ToolConfig }) {
                   );
                 })}
               </div>
+              <AdUnit slot="result-bottom" format="horizontal" />
             </>
           )}
         </div>

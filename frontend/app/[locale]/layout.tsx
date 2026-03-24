@@ -8,6 +8,7 @@ import { SITE_URL, SITE_NAME } from "@/lib/config";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import { Analytics } from "@/components/analytics";
+import { AdSenseScript } from "@/components/adsense-script";
 import { CookieConsent } from "@/components/cookie-consent";
 import "./globals.css";
 
@@ -96,6 +97,7 @@ export default async function LocaleLayout({
           <CookieConsent />
         </NextIntlClientProvider>
         <Analytics />
+        <AdSenseScript />
       </body>
     </html>
   );

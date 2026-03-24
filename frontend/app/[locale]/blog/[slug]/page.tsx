@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from "@/i18n/navigation";
 import { getLocalizedBlogPost, getAllBlogSlugs } from "@/lib/blog";
 import { SITE_NAME } from "@/lib/config";
+import { AdUnit } from "@/components/ad-unit";
 import { locales } from "@/i18n/config";
 
 type Props = {
@@ -71,6 +72,8 @@ export default async function BlogPostPage({ params }: Props) {
           <MDXRemote source={post.content} />
         </div>
       </article>
+
+      <AdUnit slot="blog-bottom" />
 
       <script
         type="application/ld+json"
