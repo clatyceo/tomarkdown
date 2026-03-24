@@ -99,8 +99,19 @@ export default async function LocaleLayout({
 
   const messages = await getMessages();
 
+  const adsenseId = process.env.NEXT_PUBLIC_ADSENSE_ID;
+
   return (
     <html lang={locale}>
+      <head>
+        {adsenseId && (
+          <script
+            async
+            src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsenseId}`}
+            crossOrigin="anonymous"
+          />
+        )}
+      </head>
       <body
         className={`${sora.variable} ${instrumentSerif.variable} font-sans antialiased bg-[#E4DFDA] text-gray-900`}
       >
