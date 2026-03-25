@@ -91,7 +91,7 @@ The hardest part wasn't adding formats -- MarkItDown handles most of the heavy l
 
 ## Going Open Source
 
-The project is open source under AGPL. The code is on [GitHub](https://github.com/clatyceo/tomarkdown).
+The project is open source under AGPL. The code is on [GitHub](https://github.com/clatyceo/tomdnow).
 
 Why AGPL specifically? I want the tool to stay free and open. AGPL means if someone takes the code and builds a hosted service from it, they need to share their modifications. Regular use, self-hosting, and integration into private tools are all fine. But if you commercialize a hosted version, the community benefits from your improvements.
 
@@ -115,7 +115,7 @@ Here's what I'm working on:
 ## Try It / Contribute
 
 - **Convert a file now:** [tomdnow.com](https://tomdnow.com)
-- **Star or contribute:** [GitHub](https://github.com/clatyceo/tomarkdown)
+- **Star or contribute:** [GitHub](https://github.com/clatyceo/tomdnow)
 - **API access:** [tomdnow.com/en/docs/api](https://tomdnow.com/en/docs/api)
 
 If you have a file format that doesn't convert well, open an issue. If you want to improve conversion quality for a specific format, PRs are welcome. This started as a tool I built for myself, and I'd love to see it grow into something the community shapes together.

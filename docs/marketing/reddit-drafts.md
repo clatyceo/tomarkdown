@@ -26,7 +26,7 @@ The output is clean Markdown with preserved headings, lists, and tables. You can
 
 **Honest limitations:** Very complex PDF layouts (multi-column academic papers) can sometimes lose structure. OCR quality depends on image resolution. Tables from Excel are clean, but heavily merged-cell spreadsheets can get messy.
 
-It's open source: [github.com/clatyceo/tomarkdown](https://github.com/clatyceo/tomarkdown)
+It's open source: [github.com/clatyceo/tomdnow](https://github.com/clatyceo/tomdnow)
 
 Would love to hear how other Obsidian users handle document ingestion into their vaults. What formats do you convert most often?
 
@@ -60,7 +60,7 @@ The conversion engine is Microsoft's open-source [MarkItDown](https://github.com
 
 **Limitations I'll be honest about:** PDF conversion quality varies with document complexity. Scanned-image PDFs require the OCR path and results depend on image quality. Some complex spreadsheet formatting (heavy cell merging, conditional formatting) doesn't translate perfectly.
 
-Open source (AGPL): [github.com/clatyceo/tomarkdown](https://github.com/clatyceo/tomarkdown)
+Open source (AGPL): [github.com/clatyceo/tomdnow](https://github.com/clatyceo/tomdnow)
 
 Feedback on conversion quality for any format is very welcome -- open an issue or comment here.
 
@@ -116,6 +116,6 @@ curl -X POST http://localhost:8000/convert \
 
 **Honest notes:** Resource usage depends on what you're converting. OCR and large PDFs are the most CPU-intensive. The Python backend needs a few hundred MB of RAM at minimum. Complex conversions can spike higher.
 
-GitHub: [github.com/clatyceo/tomarkdown](https://github.com/clatyceo/tomarkdown)
+GitHub: [github.com/clatyceo/tomdnow](https://github.com/clatyceo/tomdnow)
 
 Happy to answer questions about the architecture or self-hosting setup.

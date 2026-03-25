@@ -48,7 +48,7 @@ I built tomdnow because I needed it. I'm sharing it because I think others need 
 Would love your feedback. What formats should I add next?
 
 Site: https://tomdnow.com
-GitHub: https://github.com/clatyceo/tomarkdown
+GitHub: https://github.com/clatyceo/tomdnow
 API docs: https://tomdnow.com/en/docs/api
 
 ---

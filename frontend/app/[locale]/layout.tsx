@@ -120,7 +120,7 @@ export default async function LocaleLayout({
                 url: `${SITE_URL}/${locale}/about`,
               },
               sameAs: [
-                "https://github.com/clatyceo/tomarkdown",
+                "https://github.com/clatyceo/tomdnow",
                 "https://x.com/tomdnow",
                 "https://www.linkedin.com/in/%EA%B0%90%EC%82%AC-%EB%B0%95-8750443ba/",
                 "https://www.producthunt.com/@clatyceo",

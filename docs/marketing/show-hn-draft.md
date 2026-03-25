@@ -17,6 +17,6 @@ On privacy: I wanted to build something I'd trust with my own tax documents. Fil
 Known limitations: very large files (100MB+) can be slow or time out; OCR quality depends on image resolution; some complex Excel formatting doesn't survive the conversion cleanly. I'm working on all of these.
 
 - Site: https://tomdnow.com
-- GitHub: https://github.com/clatyceo/tomarkdown
+- GitHub: https://github.com/clatyceo/tomdnow
 - API docs: https://tomdnow.com/en/docs/api
 - Supported in 8 languages: EN, KO, JA, ZH, ES, PT, DE, FR

@@ -111,6 +111,6 @@ Here's an honest look at the tools available for file-to-Markdown conversion:
 
 - **Web tool:** [tomdnow.com](https://tomdnow.com) -- drag, drop, convert, copy. No sign-up.
 - **Free API (50 req/day):** [tomdnow.com/en/docs/api](https://tomdnow.com/en/docs/api)
-- **Open source:** [github.com/clatyceo/tomarkdown](https://github.com/clatyceo/tomarkdown)
+- **Open source:** [github.com/clatyceo/tomdnow](https://github.com/clatyceo/tomdnow)
 
 Markdown is the connective tissue of the modern developer toolkit. Having a reliable way to get content into Markdown -- from any format, without compromising privacy -- is one of those small tools that saves more time than you'd expect.
