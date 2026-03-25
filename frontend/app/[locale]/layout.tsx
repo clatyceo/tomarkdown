@@ -139,7 +139,9 @@ export default async function LocaleLayout({
                 name: "박감사",
                 alternateName: "Park Gamsa",
               },
-              sameAs: [],
+              sameAs: [
+                "https://github.com/clatyceo/tomarkdown",
+              ],
             }),
           }}
         />
