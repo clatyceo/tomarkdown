@@ -1,17 +1,17 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
 import { SITE_URL } from "@/lib/config";
+import { generatePageMetadata } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("pricing");
-  return {
-    title: t("title"),
-    description: t("subtitle"),
-    alternates: {
-      canonical: `${SITE_URL}/pricing`,
-    },
-  };
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "pricing" });
+  return generatePageMetadata({ locale, path: "pricing", title: t("title"), description: t("subtitle") });
 }
 
 function CheckIcon() {

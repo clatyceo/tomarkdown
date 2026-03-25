@@ -1,11 +1,20 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { generatePageMetadata } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("privacy");
-  return {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "privacy" });
+  return generatePageMetadata({
+    locale,
+    path: "privacy",
     title: t("metaTitle"),
-  };
+    description: "Learn how tomdnow handles your data. No files stored, no accounts required.",
+  });
 }
 
 export default async function Privacy() {

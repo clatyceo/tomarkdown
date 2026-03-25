@@ -1,11 +1,20 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { generatePageMetadata } from "@/lib/seo";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("terms");
-  return {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "terms" });
+  return generatePageMetadata({
+    locale,
+    path: "terms",
     title: t("metaTitle"),
-  };
+    description: "Terms of service for using the tomdnow file conversion tool.",
+  });
 }
 
 export default async function Terms() {

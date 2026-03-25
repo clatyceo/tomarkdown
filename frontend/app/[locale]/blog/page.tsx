@@ -1,5 +1,6 @@
 import { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
+import { generatePageMetadata } from "@/lib/seo";
 import { Link } from "@/i18n/navigation";
 import { getLocalizedBlogPosts } from "@/lib/blog";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
@@ -11,10 +12,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "blog" });
-  return {
-    title: t("title"),
-    description: t("subtitle"),
-  };
+  return generatePageMetadata({ locale, path: "blog", title: t("title"), description: t("subtitle") });
 }
 
 export default async function BlogIndex({

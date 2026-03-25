@@ -6,6 +6,7 @@ import { MDXRemote } from "next-mdx-remote/rsc";
 import { Link } from "@/i18n/navigation";
 import { getLocalizedBlogPost, getAllBlogSlugs } from "@/lib/blog";
 import { SITE_NAME, SITE_URL } from "@/lib/config";
+import { generatePageMetadata } from "@/lib/seo";
 import { AdUnit } from "@/components/ad-unit";
 import { BreadcrumbSchema } from "@/components/breadcrumb-schema";
 import { locales } from "@/i18n/config";
@@ -28,10 +29,16 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const post = getCachedPost(locale, slug);
   if (!post) return { title: "Not Found" };
 
-  return {
+  return generatePageMetadata({
+    locale,
+    path: `blog/${slug}`,
     title: `${post.title} — ${SITE_NAME}`,
     description: post.description,
-  };
+    ogType: "article",
+    publishedTime: post.date,
+    modifiedTime: post.date,
+    authors: [post.author],
+  });
 }
 
 export default async function BlogPostPage({ params }: Props) {
