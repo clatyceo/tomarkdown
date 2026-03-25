@@ -1,6 +1,19 @@
 import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server";
+import { generatePageMetadata } from "@/lib/seo";
 import ToolCard from "@/components/tool-card";
 import { toolsByCategory, tools } from "@/lib/tools";
+
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta" });
+  return generatePageMetadata({
+    locale,
+    path: "",
+    title: t("title"),
+    description: t("description"),
+  });
+}
 
 const categoryKeys: Record<string, string> = {
   Documents: "documents",
