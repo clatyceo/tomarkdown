@@ -139,7 +139,9 @@
       "faq3Q": "能保留格式吗？",
       "faq3A": "我们会保留标题、列表、表格和链接。复杂的版式可能会被简化以提高可读性。",
       "faq4Q": "我的文件会被存储在服务器上吗？",
-      "faq4A": "不会。您的文件在内存中处理，转换完成后立即删除。"
+      "faq4A": "不会。您的文件在内存中处理，转换完成后立即删除。",
+      "definitionParagraph": "tomdnow的PDF转Markdown转换器可将PDF文档转换为简洁、结构化的Markdown文件。它保留标题、列表、表格和链接，同时简化复杂布局以获得最佳可读性。文件完全在内存中处理，绝不存储在服务器上。",
+      "detailParagraph": "该转换器由Microsoft的开源MarkItDown引擎驱动，可处理包含文本、表格、标题和嵌入列表等混合内容的多页PDF。输出与GitHub、Obsidian、Notion以及任何基于Markdown的编辑器或文档系统兼容。支持最大10MB的文件，大多数转换在5秒内完成。"
     },
     "docx": {
       "title": "DOCX转Markdown — tomdnow",
@@ -165,7 +167,9 @@
       "faq3Q": "图片会保留吗？",
       "faq3A": "Markdown 输出中会引用图片但不会嵌入。文本内容会完整保留。",
       "faq4Q": "我的文件会被存储在服务器上吗？",
-      "faq4A": "不会。您的文件在内存中处理，转换完成后立即删除。"
+      "faq4A": "不会。您的文件在内存中处理，转换完成后立即删除。",
+      "definitionParagraph": "tomdnow的Word转Markdown转换器可将Microsoft Word文档（.docx）转换为简洁、结构化的Markdown。它保留包括标题、粗体/斜体格式、列表和表格在内的文档层级，同时去除Word专有格式。",
+      "detailParagraph": "该转换器使用Microsoft的MarkItDown引擎解析DOCX文件的OOXML结构，提取保持语义结构完整的文本内容。非常适合将文档从Word迁移到GitHub wiki、Obsidian知识库或Jekyll、Hugo等静态网站生成器等基于Markdown的平台。"
     },
     "youtube": {
       "title": "YouTube转Markdown — tomdnow",
@@ -191,7 +195,9 @@
       "faq3Q": "会包含时间戳吗？",
       "faq3A": "是的，字幕中包含每个片段的时间戳。",
       "faq4Q": "可以选择语言吗？",
-      "faq4A": "目前我们提取视频默认的字幕语言。"
+      "faq4A": "目前我们提取视频默认的字幕语言。",
+      "definitionParagraph": "tomdnow的YouTube转Markdown转换器可提取视频字幕并将其转换为带时间戳的简洁Markdown文件。只需粘贴YouTube URL，即可获得包含完整字幕的可下载Markdown文件。",
+      "detailParagraph": "该工具从YouTube API获取可用字幕或自动生成的字幕，以时间戳格式化以便导航，并将输出结构化为简洁的Markdown。特别适用于从教学视频创建学习笔记、构建可搜索的视频内容存档，或将视频字幕输入ChatGPT和Claude等AI工具进行分析。"
     },
     "pptx": {
       "title": "PPTX转Markdown — tomdnow",
@@ -243,7 +249,9 @@
       "faq3Q": "公式会保留吗？",
       "faq3A": "公式会被计算，输出中包含计算后的结果值。",
       "faq4Q": "我的文件会被存储吗？",
-      "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。"
+      "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。",
+      "definitionParagraph": "tomdnow的Excel转Markdown转换器可将XLSX文件中的电子表格数据转换为格式正确的Markdown表格。每个工作表分别转换，保留表头、数据行和列对齐方式。",
+      "detailParagraph": "该转换器会计算公式并在输出中包含计算值，因此您获得的是实际数据而非公式引用。多工作表的工作簿会将每个工作表转换为单独的Markdown部分。输出表格与GitHub Flavored Markdown兼容，在支持GFM表格的任何平台上都能正确显示。"
     },
     "xls": {
       "title": "XLS转Markdown — tomdnow",
@@ -521,7 +529,9 @@
       "faq3Q": "能保留格式吗？",
       "faq3A": "我们会保留文本内容、标题和文档结构。复杂的版式可能会被简化。",
       "faq4Q": "我的文件会被存储吗？",
-      "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。"
+      "faq4A": "不会。文件在内存中处理，处理完毕后立即删除。",
+      "definitionParagraph": "tomdnow的HWP转Markdown转换器是少数能将韩国Hangul文字处理器文件转换为Markdown的在线工具之一。HWP是韩国的主流文档格式，广泛用于政府文件、企业报告和学术论文。",
+      "detailParagraph": "大多数转换工具完全不支持HWP — Pandoc、Google Docs和大多数在线转换器都无法读取此格式。tomdnow通过将HWP文档转换为简洁的Markdown来填补这一空白，同时保留韩文文本、文档结构和基本格式，使韩国用户能够在GitHub、Obsidian、Notion和AI系统等全球工具中使用HWP内容。"
     },
     "ocr": {
       "title": "图片OCR转Markdown — tomdnow",

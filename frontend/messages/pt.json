@@ -139,7 +139,9 @@
       "faq3Q": "A formatação é preservada?",
       "faq3A": "Preservamos títulos, listas, tabelas e links. Layouts complexos podem ser simplificados para melhor legibilidade.",
       "faq4Q": "Meu arquivo é armazenado no servidor?",
-      "faq4A": "Não. Seu arquivo é processado em memória e excluído imediatamente após a conversão."
+      "faq4A": "Não. Seu arquivo é processado em memória e excluído imediatamente após a conversão.",
+      "definitionParagraph": "O conversor de PDF para Markdown do tomdnow transforma documentos PDF em arquivos Markdown limpos e estruturados. Preserva cabeçalhos, listas, tabelas e links enquanto simplifica layouts complexos para máxima legibilidade. Os arquivos são processados inteiramente na memória e nunca armazenados em servidores.",
+      "detailParagraph": "Desenvolvido com o motor de código aberto MarkItDown da Microsoft, o conversor processa PDFs de múltiplas páginas com conteúdo misto incluindo texto, tabelas, cabeçalhos e listas incorporadas. A saída é compatível com GitHub, Obsidian, Notion e qualquer editor ou sistema de documentação baseado em Markdown. Suporta arquivos de até 10MB e completa a maioria das conversões em menos de 5 segundos."
     },
     "docx": {
       "title": "DOCX para Markdown — tomdnow",
@@ -165,7 +167,9 @@
       "faq3Q": "As imagens são preservadas?",
       "faq3A": "As imagens são referenciadas na saída Markdown, mas não incorporadas. O conteúdo de texto é totalmente preservado.",
       "faq4Q": "Meu arquivo é armazenado no servidor?",
-      "faq4A": "Não. Seu arquivo é processado em memória e excluído imediatamente após a conversão."
+      "faq4A": "Não. Seu arquivo é processado em memória e excluído imediatamente após a conversão.",
+      "definitionParagraph": "O conversor de Word para Markdown do tomdnow transforma documentos do Microsoft Word (.docx) em Markdown limpo e estruturado. Preserva a hierarquia do documento incluindo cabeçalhos, formatação negrito/itálico, listas e tabelas enquanto remove a formatação proprietária do Word.",
+      "detailParagraph": "O conversor utiliza o motor MarkItDown da Microsoft para analisar a estrutura OOXML dos arquivos DOCX, extraindo conteúdo de texto com a estrutura semântica intacta. Isso o torna ideal para migrar documentação do Word para plataformas baseadas em Markdown como wikis do GitHub, cofres do Obsidian ou geradores de sites estáticos como Jekyll e Hugo."
     },
     "youtube": {
       "title": "YouTube para Markdown — tomdnow",
@@ -191,7 +195,9 @@
       "faq3Q": "Inclui marcações de tempo?",
       "faq3A": "Sim, a transcrição inclui marcações de tempo para cada trecho.",
       "faq4Q": "Posso escolher o idioma?",
-      "faq4A": "Atualmente extraímos o idioma padrão da transcrição disponível para o vídeo."
+      "faq4A": "Atualmente extraímos o idioma padrão da transcrição disponível para o vídeo.",
+      "definitionParagraph": "O conversor de YouTube para Markdown do tomdnow extrai transcrições de vídeos e as converte em arquivos Markdown limpos com timestamps. Basta colar uma URL do YouTube e obter um arquivo Markdown para download com a transcrição completa.",
+      "detailParagraph": "A ferramenta obtém legendas disponíveis ou legendas geradas automaticamente pela API do YouTube, formata-as com timestamps para fácil navegação e estrutura a saída como Markdown limpo. É particularmente útil para criar notas de estudo a partir de vídeos educacionais, construir arquivos pesquisáveis de conteúdo de vídeo ou alimentar transcrições de vídeo em ferramentas de IA como ChatGPT e Claude para análise."
     },
     "pptx": {
       "title": "PPTX para Markdown — tomdnow",
@@ -243,7 +249,9 @@
       "faq3Q": "As fórmulas são preservadas?",
       "faq3A": "As fórmulas são calculadas e os valores resultantes são incluídos.",
       "faq4Q": "Meu arquivo é armazenado?",
-      "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente."
+      "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente.",
+      "definitionParagraph": "O conversor de Excel para Markdown do tomdnow transforma dados de planilhas de arquivos XLSX em tabelas Markdown corretamente formatadas. Cada planilha é convertida separadamente com cabeçalhos, linhas de dados e alinhamento de colunas preservados.",
+      "detailParagraph": "O conversor avalia fórmulas e inclui seus valores calculados na saída, então você obtém os dados reais em vez de referências a fórmulas. Pastas de trabalho com múltiplas planilhas são processadas convertendo cada planilha em uma seção Markdown separada. As tabelas de saída são compatíveis com GitHub Flavored Markdown e renderizam corretamente em qualquer plataforma que suporte tabelas GFM."
     },
     "xls": {
       "title": "XLS para Markdown — tomdnow",
@@ -521,7 +529,9 @@
       "faq3Q": "A formatação é preservada?",
       "faq3A": "Preservamos o conteúdo de texto, títulos e estrutura. Layouts complexos podem ser simplificados.",
       "faq4Q": "Meu arquivo é armazenado?",
-      "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente."
+      "faq4A": "Não. Os arquivos são processados em memória e excluídos imediatamente.",
+      "definitionParagraph": "O conversor de HWP para Markdown do tomdnow é uma das poucas ferramentas online que pode converter arquivos do processador de texto coreano Hangul para Markdown. HWP é o formato de documento dominante na Coreia do Sul, utilizado para documentos governamentais, relatórios corporativos e trabalhos acadêmicos.",
+      "detailParagraph": "A maioria das ferramentas de conversão não suporta HWP — Pandoc, Google Docs e a maioria dos conversores online não conseguem ler este formato. O tomdnow preenche essa lacuna convertendo documentos HWP em Markdown limpo enquanto preserva o texto coreano, a estrutura do documento e a formatação básica. Isso permite que usuários coreanos utilizem conteúdo HWP em ferramentas globais como GitHub, Obsidian, Notion e sistemas de IA."
     },
     "ocr": {
       "title": "OCR de Imagem para Markdown — tomdnow",

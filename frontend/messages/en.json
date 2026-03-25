@@ -139,7 +139,9 @@
       "faq3Q": "Does it preserve formatting?",
       "faq3A": "We preserve headings, lists, tables, and links. Complex layouts may be simplified for readability.",
       "faq4Q": "Is my file stored on the server?",
-      "faq4A": "No. Your file is processed in memory and immediately deleted after conversion."
+      "faq4A": "No. Your file is processed in memory and immediately deleted after conversion.",
+      "definitionParagraph": "tomdnow's PDF to Markdown converter transforms PDF documents into clean, structured Markdown files. It preserves headings, lists, tables, and links while simplifying complex layouts for maximum readability. Files are processed entirely in memory and never stored on servers.",
+      "detailParagraph": "Powered by Microsoft's open-source MarkItDown engine, the converter handles multi-page PDFs with mixed content including text, tables, headers, and embedded lists. Output is compatible with GitHub, Obsidian, Notion, and any Markdown-based editor or documentation system. The tool supports files up to 10MB and completes most conversions in under 5 seconds."
     },
     "docx": {
       "title": "DOCX to Markdown — tomdnow",
@@ -165,7 +167,9 @@
       "faq3Q": "Are images preserved?",
       "faq3A": "Images are referenced in the Markdown output but not embedded. Text content is fully preserved.",
       "faq4Q": "Is my file stored on the server?",
-      "faq4A": "No. Your file is processed in memory and immediately deleted after conversion."
+      "faq4A": "No. Your file is processed in memory and immediately deleted after conversion.",
+      "definitionParagraph": "tomdnow's Word to Markdown converter transforms Microsoft Word documents (.docx) into clean, structured Markdown. It preserves document hierarchy including headings, bold/italic formatting, lists, and tables while stripping proprietary Word formatting.",
+      "detailParagraph": "The converter uses Microsoft's MarkItDown engine to parse the OOXML structure of DOCX files, extracting text content with semantic structure intact. This makes it ideal for migrating documentation from Word to Markdown-based platforms like GitHub wikis, Obsidian vaults, or static site generators like Jekyll and Hugo."
     },
     "youtube": {
       "title": "YouTube to Markdown — tomdnow",
@@ -191,7 +195,9 @@
       "faq3Q": "Does it include timestamps?",
       "faq3A": "Yes, the transcript includes timestamps for each segment.",
       "faq4Q": "Can I choose the language?",
-      "faq4A": "Currently we extract the default transcript language available for the video."
+      "faq4A": "Currently we extract the default transcript language available for the video.",
+      "definitionParagraph": "tomdnow's YouTube to Markdown converter extracts video transcripts and converts them into clean, timestamped Markdown files. Simply paste a YouTube URL and get a downloadable Markdown file with the complete transcript.",
+      "detailParagraph": "The tool pulls available captions or auto-generated subtitles from YouTube's API, formats them with timestamps for easy navigation, and structures the output as clean Markdown. This is particularly useful for creating study notes from educational videos, building searchable archives of video content, or feeding video transcripts into AI tools like ChatGPT and Claude for analysis."
     },
     "pptx": {
       "title": "PPTX to Markdown — tomdnow",
@@ -243,7 +249,9 @@
       "faq3Q": "Are formulas preserved?",
       "faq3A": "Formulas are evaluated and the resulting values are included.",
       "faq4Q": "Is my file stored?",
-      "faq4A": "No. Files are processed in memory and deleted immediately."
+      "faq4A": "No. Files are processed in memory and deleted immediately.",
+      "definitionParagraph": "tomdnow's Excel to Markdown converter transforms spreadsheet data from XLSX files into properly formatted Markdown tables. Each sheet is converted separately with headers, data rows, and column alignment preserved.",
+      "detailParagraph": "The converter evaluates formulas and includes their computed values in the output, so you get the actual data rather than formula references. Multi-sheet workbooks are handled by converting each sheet into a separate Markdown section. Output tables are compatible with GitHub Flavored Markdown and render correctly on any platform that supports GFM tables."
     },
     "xls": {
       "title": "XLS to Markdown — tomdnow",
@@ -521,7 +529,9 @@
       "faq3Q": "Does it preserve formatting?",
       "faq3A": "We preserve text content, headings, and structure. Complex layouts may be simplified.",
       "faq4Q": "Is my file stored?",
-      "faq4A": "No. Files are processed in memory and deleted immediately."
+      "faq4A": "No. Files are processed in memory and deleted immediately.",
+      "definitionParagraph": "tomdnow's HWP to Markdown converter is one of the few online tools that can convert Korean Hangul Word Processor files to Markdown. HWP is the dominant document format in South Korea, used for government filings, corporate reports, and academic papers.",
+      "detailParagraph": "Most conversion tools do not support HWP at all — Pandoc, Google Docs, and most online converters cannot read this format. tomdnow fills this gap by converting HWP documents to clean Markdown while preserving Korean text, document structure, and basic formatting. This enables Korean users to use HWP content in global tools like GitHub, Obsidian, Notion, and AI systems."
     },
     "ocr": {
       "title": "Image OCR to Markdown — tomdnow",
