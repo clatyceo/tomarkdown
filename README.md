@@ -1,36 +1,57 @@
-# ToMarkdown
+<div align="center">
+  <h1>tomdnow</h1>
+  <p>Free, privacy-first file-to-Markdown converter for 20+ formats</p>
 
-![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
-![Tests](https://img.shields.io/badge/Tests-40%20passing-brightgreen)
-![License](https://img.shields.io/badge/License-MIT-blue)
+  <a href="https://tomdnow.com">Website</a> ·
+  <a href="https://tomdnow.com/en/docs/api">API Docs</a> ·
+  <a href="https://tomdnow.com/en/blog">Blog</a>
 
-Free online tool to convert any file to Markdown. Powered by Microsoft's [MarkItDown](https://github.com/microsoft/markitdown).
+  ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
+  ![Next.js](https://img.shields.io/badge/Next.js-16-000000?logo=next.js&logoColor=white)
+  ![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688?logo=fastapi&logoColor=white)
+  ![Tests](https://img.shields.io/badge/Tests-40%20passing-brightgreen)
+  ![License](https://img.shields.io/badge/License-MIT-blue)
+</div>
 
-## Supported Formats
+## What is tomdnow?
+
+tomdnow converts 20+ file formats to clean Markdown — for free, with no sign-up, and complete privacy. Files are processed entirely in memory and never stored.
+
+### Supported Formats
 
 | Category | Formats |
 |----------|---------|
-| **Documents** | PDF, DOCX, PPTX, XLSX, XLS, MSG |
-| **Data** | CSV, JSON, XML, Jupyter (.ipynb), ZIP |
-| **Media** | YouTube (transcript), HTML, EPUB, Image (EXIF) |
+| **Documents** | PDF, DOCX, PPTX, HWP, HWPX, RTF, TXT |
+| **Spreadsheets** | XLSX, XLS, CSV |
+| **Data & Code** | JSON, XML, Jupyter (.ipynb) |
+| **Email** | MSG (Outlook) |
+| **Media** | Image OCR (JPG, PNG, GIF, WEBP), YouTube transcripts |
+| **Web & Publishing** | HTML, EPUB |
+| **Archive** | ZIP |
 
-## Architecture
+## Why tomdnow?
 
-```
-[Vercel] Next.js Frontend
-    |
-    | POST /api/convert (proxy)
-    v
-[Railway] FastAPI Backend + markitdown
-```
+| | tomdnow | Pandoc | CloudConvert | Marker |
+|---|---------|--------|--------------|--------|
+| **File Formats** | 20+ (web UI) | Many (CLI only) | 200+ | PDF only |
+| **Privacy** | In-memory, never stored | Local | Cloud storage | Local |
+| **Cost** | Free | Free (OSS) | Freemium | Free (OSS) |
+| **Sign-up** | Not required | N/A | Required | N/A |
+| **HWP/HWPX** | Yes | No | No | No |
+| **API** | Yes (free) | CLI | Paid | No |
 
-- Frontend proxies requests to backend (no direct backend exposure)
-- Files processed in memory, deleted immediately after conversion
-- Rate limiting: 20 requests/min per IP
+## Tech Stack
 
-## Installation
+- **Frontend:** Next.js 16 + React 19 + Tailwind CSS — hosted on Vercel
+- **Backend:** FastAPI + Microsoft MarkItDown — hosted on Railway
+- **i18n:** 8 languages (EN, KO, JA, ZH, ES, PT, DE, FR)
+
+## Self-Hosting
+
+### Prerequisites
+
+- Python 3.12+
+- Node.js 20+
 
 ### Backend
 
@@ -39,6 +60,7 @@ cd backend
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+uvicorn main:app --port 8000
 ```
 
 ### Frontend
@@ -46,11 +68,14 @@ pip install -r requirements.txt
 ```bash
 cd frontend
 npm install
+npm run dev
 ```
 
-## Environment Variables
+Open http://localhost:3000
 
-### Backend (`backend/.env`)
+### Environment Variables
+
+**Backend** (`backend/.env`)
 
 | Variable | Default | Description |
 |----------|---------|-------------|
@@ -60,103 +85,24 @@ npm install
 | `CONVERSION_TIMEOUT` | `30` | Conversion timeout in seconds |
 | `ALLOWED_ORIGINS` | `http://localhost:3000` | Comma-separated CORS origins |
 
-### Frontend (`frontend/.env.local`)
+**Frontend** (`frontend/.env.local`)
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `BACKEND_URL` | `http://localhost:8000` | Backend API URL |
-| `NEXT_PUBLIC_SITE_URL` | `https://tomarkdown.com` | Public site URL (SEO) |
+| `NEXT_PUBLIC_SITE_URL` | `https://tomdnow.com` | Public site URL (SEO) |
 
-## Usage
+## API
 
-Start both servers:
-
-```bash
-# Terminal 1: Backend
-cd backend
-source venv/bin/activate
-uvicorn main:app --port 8000
-
-# Terminal 2: Frontend
-cd frontend
-npm run dev
-```
-
-Open http://localhost:3000
-
-## API Documentation
-
-### POST /convert
-
-Convert a file to Markdown.
-
-**Request:** `multipart/form-data`
-- `file` - The file to convert
-- `type` - File type (`pdf`, `docx`, `pptx`, `xlsx`, `xls`, `html`, `csv`, `json`, `xml`, `msg`, `epub`, `ipynb`, `zip`, `jpg`, `png`, `gif`, `webp`)
-
-**Response:**
-```json
-{
-  "markdown": "# Converted content...",
-  "metadata": {
-    "title": "filename",
-    "type": "pdf",
-    "size": 125000
-  }
-}
-```
-
-### POST /convert/url
-
-Convert a YouTube URL to Markdown transcript.
-
-**Request:** `application/json`
-```json
-{
-  "url": "https://www.youtube.com/watch?v=...",
-  "type": "youtube"
-}
-```
-
-**Response:** Same format as `/convert`
-
-### GET /health
-
-Health check endpoint.
-
-**Response:** `{"status": "ok"}`
-
-### Error Responses
-
-| Status | Description |
-|--------|-------------|
-| 400 | Invalid request (missing fields, unsupported type) |
-| 413 | File too large (>10MB) |
-| 422 | Conversion failed or timed out |
-| 429 | Rate limit exceeded |
-
-## Testing
-
-### Backend
+Free API with 50 requests/day. No credit card required.
 
 ```bash
-cd backend
-source venv/bin/activate
-
-# Run tests
-pytest tests/ -v
-
-# Run with coverage
-pip install pytest-cov
-pytest --cov=. --cov-report=term-missing tests/
+curl -X POST https://api.tomdnow.com/api/v1/convert \
+  -H "X-Api-Key: tmd_your_key" \
+  -F "file=@document.pdf"
 ```
 
-### Frontend
-
-```bash
-cd frontend
-npm test
-```
+[Full API Documentation](https://tomdnow.com/en/docs/api)
 
 ## Deployment
 
@@ -175,13 +121,9 @@ npm test
 3. Add environment variable: `BACKEND_URL` = your Railway URL
 4. Deploy
 
-### Domain (Cloudflare)
-
-1. Register domain on Cloudflare
-2. Add CNAME record pointing to `cname.vercel-dns.com`
-3. Set Proxy to "DNS only" (grey cloud)
-
 ## Contributing
+
+Contributions welcome! Here's how:
 
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feat/new-format`)
@@ -195,9 +137,14 @@ npm test
 1. **Backend:** Add file extension to `SUPPORTED_FILE_TYPES` in `converter.py`
 2. **Backend:** Add pip dependency group to `requirements.txt` if needed
 3. **Frontend:** Add tool config to `lib/tools.ts`
-4. **Frontend:** Create `app/{slug}/page.tsx` (copy existing pattern)
+4. **Frontend:** Create route page (copy existing pattern)
 5. **Tests:** Add unit test for the new type
 
 ## License
 
-MIT
+[MIT](./LICENSE)
+
+## About
+
+Built by [Park Gamsa](https://tomdnow.com/en/about) in South Korea.
+Powered by [Microsoft MarkItDown](https://github.com/microsoft/markitdown).
