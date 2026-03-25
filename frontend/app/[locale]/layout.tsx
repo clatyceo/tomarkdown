@@ -141,6 +141,10 @@ export default async function LocaleLayout({
               },
               sameAs: [
                 "https://github.com/clatyceo/tomarkdown",
+                "https://x.com/tomdnow",
+                "https://www.linkedin.com/in/%EA%B0%90%EC%82%AC-%EB%B0%95-8750443ba/",
+                "https://www.producthunt.com/@clatyceo",
+                "https://dev.to/tomdnow",
               ],
             }),
           }}
