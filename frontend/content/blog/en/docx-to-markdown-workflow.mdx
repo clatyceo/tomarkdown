@@ -1,0 +1,85 @@
+---
+title: "How to Convert Word Documents to Markdown: A Complete Workflow"
+description: "Learn the complete workflow for converting DOCX files to Markdown for GitHub docs, Obsidian vaults, Hugo sites, and more."
+date: "2026-03-25"
+author: "박감사"
+tags: ["docx", "markdown", "workflow", "documentation"]
+---
+
+## Why Convert Word Documents to Markdown?
+
+Microsoft Word is the default document format for billions of people. Contracts, reports, meeting notes, and project documentation all start as DOCX files. But Word documents are trapped inside a proprietary format that does not play well with modern development tools, AI systems, or open-source workflows.
+
+Markdown, by contrast, is plain text with simple formatting. It works everywhere: Git repositories, static site generators, knowledge bases, and AI tools. Converting your Word documents to Markdown unlocks your content from the Microsoft ecosystem and makes it portable, version-controllable, and future-proof.
+
+Here are the most common reasons teams convert DOCX to Markdown:
+
+- **GitHub documentation** — README files, wikis, and project docs all use Markdown natively.
+- **Static site generators** — Hugo, Jekyll, Docusaurus, and Astro all consume Markdown content directly.
+- **Knowledge management** — Obsidian, Logseq, and other tools are built on Markdown files.
+- **AI workflows** — ChatGPT, Claude, and Gemini process Markdown more accurately than DOCX.
+- **Version control** — Markdown diffs in Git are clean and human-readable, unlike binary DOCX diffs.
+
+## The Conversion Workflow with tomdnow
+
+Converting a Word document to Markdown with [tomdnow](https://tomdnow.com) is straightforward. Here is the complete workflow from start to finish.
+
+### Step 1: Prepare Your Document
+
+Before converting, clean up your Word document for the best results:
+
+- Remove unnecessary blank pages and extra spacing.
+- Use built-in heading styles (Heading 1, Heading 2, etc.) rather than manually bolded text. The converter maps Word heading styles directly to Markdown heading levels.
+- Ensure tables are simple. Complex merged cells may be simplified during conversion.
+
+### Step 2: Upload and Convert
+
+1. Visit [tomdnow.com](https://tomdnow.com) and select the DOCX to Markdown converter.
+2. Drag and drop your `.docx` file or click to browse. The maximum file size is 10 MB.
+3. The conversion happens in memory within seconds. No files are stored on the server.
+4. Review the Markdown output in the preview pane.
+
+### Step 3: Download and Use
+
+Click the download button to get your `.md` file, or copy the content directly to your clipboard. From here, you can use the output in any of the workflows below.
+
+## Use Case: GitHub Documentation
+
+Many teams maintain their documentation in a Git repository. After converting your Word document, you can commit the Markdown file directly:
+
+1. Save the `.md` file into your repository's `docs/` folder.
+2. Commit and push. GitHub will render the Markdown automatically.
+3. Future edits happen in Markdown, so diffs are clean and reviewable in pull requests.
+
+This eliminates the painful cycle of editing a Word document, exporting a PDF, and uploading it manually.
+
+## Use Case: Obsidian Vault
+
+Obsidian stores everything as Markdown files in a local folder. After converting your Word documents:
+
+1. Move the `.md` files into your Obsidian vault folder.
+2. Obsidian indexes them instantly. They become searchable and linkable.
+3. Add internal links using `[[double brackets]]` to connect converted content to your existing notes.
+
+This is especially powerful for migrating years of meeting notes or project documentation into a searchable knowledge graph.
+
+## Use Case: Hugo or Jekyll Blog
+
+Static site generators like Hugo and Jekyll use Markdown files with YAML frontmatter as their content source. After conversion:
+
+1. Add frontmatter (title, date, tags) to the top of your converted Markdown file.
+2. Place the file in your content directory (e.g., `content/posts/` for Hugo).
+3. Build and deploy. Your Word document is now a published web page.
+
+## Tips for Clean Conversions
+
+- **One document at a time** keeps the output focused and easy to review.
+- **Check image references.** Embedded images in Word documents are extracted, but you may need to adjust paths.
+- **Review heading hierarchy.** Ensure the converted Markdown uses a logical heading structure (one H1, followed by H2s and H3s).
+- **Tables may simplify.** Complex Word tables with merged cells convert to basic Markdown tables. Review for accuracy.
+
+## From DOCX to Everywhere
+
+The fundamental advantage of converting Word to Markdown is freedom. Your content is no longer tied to a single application. It can live in Git, render on a blog, feed an AI assistant, or power a knowledge base — all from the same source file.
+
+Start converting your Word documents for free at [tomdnow.com](https://tomdnow.com).

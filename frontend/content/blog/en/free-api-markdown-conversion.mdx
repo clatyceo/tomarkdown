@@ -1,0 +1,229 @@
+---
+title: "Automate File-to-Markdown Conversion with the Free tomdnow API"
+description: "Use the free tomdnow API to programmatically convert PDF, DOCX, HWP, and 20+ formats to Markdown. Includes curl and Python examples."
+date: "2026-03-25"
+author: "박감사"
+tags: ["api", "markdown", "automation", "developer"]
+---
+
+## Why Use an API for Markdown Conversion?
+
+Converting a single file through the web interface is easy. But what about converting 500 PDF reports? Or automatically converting every document uploaded to your internal system? Or building a pipeline that feeds converted Markdown directly into an AI tool?
+
+That is where the tomdnow API comes in. It is free, requires no credit card, and supports the same 20+ file formats as the web interface. You get 50 conversions per day on the free tier.
+
+## Getting Your API Key
+
+Before making any conversion requests, you need an API key. Getting one takes a single HTTP request:
+
+```bash
+curl -X POST https://api.tomdnow.com/api/v1/keys \
+  -H "Email: you@example.com"
+```
+
+The response includes your API key and tier information:
+
+```json
+{
+  "api_key": "tmd_abc123...",
+  "tier": "free",
+  "daily_limit": 50
+}
+```
+
+Save your API key securely. You will include it in every subsequent request using the `X-Api-Key` header.
+
+## Converting a File with curl
+
+The conversion endpoint accepts a file upload and returns the Markdown content along with metadata. Here is a basic example:
+
+```bash
+curl -X POST https://api.tomdnow.com/api/v1/convert \
+  -H "X-Api-Key: tmd_your_api_key" \
+  -F "file=@document.pdf"
+```
+
+The response contains the converted Markdown and file metadata:
+
+```json
+{
+  "markdown": "# Document Title\n\nConverted content here...",
+  "metadata": {
+    "title": "document",
+    "type": "pdf",
+    "size": 102400
+  },
+  "api_usage": {
+    "tier": "free",
+    "daily_remaining": 49
+  }
+}
+```
+
+You can convert any supported format by changing the file. The API automatically detects the file type:
+
+```bash
+# Convert a Word document
+curl -X POST https://api.tomdnow.com/api/v1/convert \
+  -H "X-Api-Key: tmd_your_api_key" \
+  -F "file=@report.docx"
+
+# Convert a Korean HWP document
+curl -X POST https://api.tomdnow.com/api/v1/convert \
+  -H "X-Api-Key: tmd_your_api_key" \
+  -F "file=@공문서.hwp"
+
+# Convert an Excel spreadsheet
+curl -X POST https://api.tomdnow.com/api/v1/convert \
+  -H "X-Api-Key: tmd_your_api_key" \
+  -F "file=@data.xlsx"
+```
+
+## Converting Files with Python
+
+For more complex workflows, Python with the `requests` library is a natural fit. Here is a function that converts a single file:
+
+```python
+import requests
+
+API_KEY = "tmd_your_api_key"
+API_URL = "https://api.tomdnow.com/api/v1/convert"
+
+def convert_to_markdown(file_path: str) -> str:
+    """Convert a file to Markdown using the tomdnow API."""
+    with open(file_path, "rb") as f:
+        response = requests.post(
+            API_URL,
+            headers={"X-Api-Key": API_KEY},
+            files={"file": f},
+        )
+    response.raise_for_status()
+    return response.json()["markdown"]
+
+# Usage
+markdown = convert_to_markdown("report.pdf")
+print(markdown)
+```
+
+## Batch Processing Multiple Files
+
+The real power of the API is batch conversion. Here is a Python script that converts every file in a directory and saves the Markdown output:
+
+```python
+import os
+import requests
+from pathlib import Path
+
+API_KEY = "tmd_your_api_key"
+API_URL = "https://api.tomdnow.com/api/v1/convert"
+
+SUPPORTED = {
+    ".pdf", ".docx", ".pptx", ".xlsx", ".xls",
+    ".hwp", ".hwpx", ".html", ".epub", ".csv",
+    ".json", ".xml", ".msg", ".ipynb", ".rtf", ".txt",
+}
+
+def convert_file(file_path: str) -> str:
+    """Convert a single file and return Markdown content."""
+    with open(file_path, "rb") as f:
+        resp = requests.post(
+            API_URL,
+            headers={"X-Api-Key": API_KEY},
+            files={"file": f},
+        )
+    resp.raise_for_status()
+    return resp.json()["markdown"]
+
+def batch_convert(input_dir: str, output_dir: str):
+    """Convert all supported files in input_dir to Markdown."""
+    os.makedirs(output_dir, exist_ok=True)
+
+    for file_path in Path(input_dir).iterdir():
+        if file_path.suffix.lower() not in SUPPORTED:
+            continue
+
+        print(f"Converting: {file_path.name}")
+        try:
+            markdown = convert_file(str(file_path))
+            out_path = Path(output_dir) / f"{file_path.stem}.md"
+            out_path.write_text(markdown, encoding="utf-8")
+            print(f"  Saved: {out_path.name}")
+        except requests.HTTPError as e:
+            print(f"  Error: {e}")
+
+# Convert all files in ./documents/ to ./markdown/
+batch_convert("./documents", "./markdown")
+```
+
+This script processes every supported file in the input directory and writes the Markdown output to a separate folder. It skips unsupported file types and handles errors gracefully.
+
+## Integration Ideas
+
+Once you have API access, here are practical ways to integrate file-to-Markdown conversion into your workflows:
+
+### CI/CD Pipeline
+
+Add a conversion step to your CI pipeline. When someone commits a PDF or Word document to the repository, automatically convert it to Markdown and commit the result:
+
+```bash
+# In your CI script
+for file in docs/sources/*.pdf; do
+  md_file="docs/generated/$(basename "$file" .pdf).md"
+  curl -s -X POST https://api.tomdnow.com/api/v1/convert \
+    -H "X-Api-Key: $TOMDNOW_API_KEY" \
+    -F "file=@$file" | jq -r '.markdown' > "$md_file"
+done
+```
+
+### Obsidian Import Script
+
+Build a script that watches a folder for new documents and automatically converts them into your Obsidian vault:
+
+```python
+import time
+from pathlib import Path
+from watchdog.observers import Observer
+from watchdog.events import FileCreatedHandler
+
+class ConvertHandler(FileCreatedHandler):
+    def on_created(self, event):
+        if Path(event.src_path).suffix.lower() in SUPPORTED:
+            markdown = convert_file(event.src_path)
+            stem = Path(event.src_path).stem
+            out = Path("~/obsidian-vault/Imports") / f"{stem}.md"
+            out.expanduser().write_text(markdown)
+
+observer = Observer()
+observer.schedule(ConvertHandler(), "./watch-folder")
+observer.start()
+```
+
+### AI Pipeline Preprocessing
+
+Convert documents to Markdown before feeding them to an AI API:
+
+```python
+# Convert and then send to OpenAI
+markdown = convert_file("quarterly-report.pdf")
+
+from openai import OpenAI
+client = OpenAI()
+response = client.chat.completions.create(
+    model="gpt-4o",
+    messages=[{
+        "role": "user",
+        "content": f"Summarize this report:\n\n{markdown}"
+    }],
+)
+print(response.choices[0].message.content)
+```
+
+## Rate Limits and Best Practices
+
+- **Free tier:** 50 requests per day. No credit card required.
+- **File size limit:** 10 MB per file.
+- **Add delays in batch scripts** to stay well within rate limits. A one-second delay between requests is sufficient.
+- **Cache results** so you do not convert the same file twice.
+- **Check `daily_remaining`** in the response to monitor your usage.
+
+Get your free API key and start automating at [tomdnow.com](https://tomdnow.com).

@@ -1,0 +1,142 @@
+---
+title: "Import Any Document into Obsidian with Markdown Conversion"
+description: "Learn how to convert PDFs, Word docs, and other files to Markdown and import them into your Obsidian vault for a powerful knowledge base."
+date: "2026-03-25"
+author: "박감사"
+tags: ["obsidian", "markdown", "productivity", "notes"]
+---
+
+## Why Obsidian Needs Markdown
+
+Obsidian is one of the most powerful knowledge management tools available today. It stores everything as plain Markdown files in a local folder, giving you full ownership of your data. No proprietary format, no cloud lock-in, no database to manage.
+
+But there is a catch. Obsidian only understands Markdown. If your existing knowledge lives in PDFs, Word documents, Excel spreadsheets, or PowerPoint presentations, you cannot simply drag those files into your vault and expect Obsidian to index and link them.
+
+The solution is simple: convert your documents to Markdown first, then import them into Obsidian. This guide walks you through the complete workflow.
+
+## The Conversion Workflow
+
+### Step 1: Identify Documents to Import
+
+Start by gathering the documents you want in your Obsidian vault. Common candidates include:
+
+- **PDF research papers and reports** — Academic papers, whitepapers, and reference documents you want to annotate and cross-reference.
+- **Word meeting notes and memos** — Corporate documents that contain decisions, action items, and institutional knowledge.
+- **Excel data tables** — Reference data you want to query and link to from your notes.
+- **PowerPoint presentations** — Key slides and talking points that capture strategic thinking.
+- **EPUB books and articles** — Long-form content you want to highlight and connect to your ideas.
+
+### Step 2: Convert with tomdnow
+
+Upload each document to [tomdnow.com](https://tomdnow.com). The tool supports over 20 formats and produces clean Markdown output:
+
+1. Go to [tomdnow.com](https://tomdnow.com) and select the appropriate converter.
+2. Upload your file (maximum 10 MB).
+3. Download the `.md` file or copy the Markdown content.
+
+The conversion preserves headings, lists, tables, and text emphasis, which are the structural elements Obsidian relies on for search and linking.
+
+### Step 3: Add to Your Vault
+
+Move or save the converted `.md` files into your Obsidian vault folder. Obsidian detects new files automatically and indexes them immediately. Your converted documents are now fully searchable within Obsidian.
+
+## Organizing Converted Content
+
+Dropping dozens of converted files into your vault without structure creates chaos. Here are proven strategies for organizing imported content.
+
+### Use a Dedicated Folder
+
+Create a folder like `Imports/` or `Converted/` in your vault. All converted documents go here first. This separates imported content from your original notes and makes it easy to process incrementally.
+
+```
+vault/
+  Imports/
+    2026-03-report.md
+    meeting-notes-q1.md
+    research-paper.md
+  Projects/
+  Daily Notes/
+  Templates/
+```
+
+### Add Metadata with Properties
+
+Obsidian supports YAML frontmatter for note metadata. After importing a converted document, add properties at the top of the file:
+
+```markdown
+---
+source: "Q1 Financial Report.pdf"
+converted: 2026-03-25
+type: report
+status: unprocessed
+---
+```
+
+This lets you filter and search imported documents by source, date, or processing status.
+
+### Create an Index Note
+
+Maintain an index note (e.g., `Import Log.md`) that links to all your converted documents:
+
+```markdown
+## Imported Documents
+
+- [[2026-03-report]] — Q1 financial report, converted from PDF
+- [[meeting-notes-q1]] — Q1 planning meeting, converted from DOCX
+- [[research-paper]] — ML optimization paper, converted from PDF
+```
+
+This gives you a single entry point to browse and process your imports.
+
+## Linking Converted Content
+
+The real power of Obsidian emerges when you link converted content to your existing notes.
+
+### Extract Key Ideas
+
+After importing a research paper, create atomic notes for each key concept and link back to the source:
+
+```markdown
+## Transformer Architecture
+
+The transformer model uses self-attention mechanisms...
+
+Source: [[research-paper#Architecture Overview]]
+```
+
+### Connect to Projects
+
+Link relevant sections of imported meeting notes to your project pages:
+
+```markdown
+## Project Alpha - Status
+
+Decision from [[meeting-notes-q1#Budget Approval]]:
+Budget approved for Phase 2.
+```
+
+### Tag for Discovery
+
+Add tags to converted documents so they surface in relevant searches:
+
+```markdown
+---
+tags: [finance, quarterly, 2026]
+---
+```
+
+## Tips for Best Results
+
+- **Convert one file at a time** so you can review and tag each import properly.
+- **Check table formatting.** Complex tables from Word or Excel may need minor adjustments for Obsidian rendering.
+- **Replace absolute image paths.** If your converted document references images, move them to your vault's attachment folder and update the paths.
+- **Process incrementally.** Do not try to import your entire document archive at once. Import a few files each week and properly integrate them into your note graph.
+- **Use Obsidian search** to find connections between converted content and your existing notes. You may discover links you did not expect.
+
+## Building a Complete Knowledge Base
+
+The combination of Obsidian and Markdown conversion transforms your document archive into a living knowledge base. PDFs that once sat unread in folders become searchable, linkable notes. Meeting minutes become connected records of decisions. Research papers become nodes in your knowledge graph.
+
+The key insight is that conversion is not the end goal — integration is. Converting a document to Markdown is the first step. Linking it to your existing knowledge, extracting key ideas, and building connections is where the real value emerges.
+
+Start importing your documents into Obsidian by converting them at [tomdnow.com](https://tomdnow.com).
